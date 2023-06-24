@@ -1,0 +1,4 @@
+.de_scroll_animation_yes .elementor-widget-container {
+    transition-timing-function: linear!important;
+    transition-duration: 50ms!important;
+}

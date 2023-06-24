@@ -1,0 +1,49 @@
+{
+  "navLinks": [
+    {
+      "id": "home",
+      "title": "Home"
+    },
+    {
+      "id": "about",
+      "title": "About"
+    },
+    {
+      "id": "product",
+      "title": "Product"
+    },
+    {
+      "id": "pricing",
+      "title": "Pricing"
+    },
+    {
+      "id": "blog",
+      "title": "Blog"
+    },
+    {
+      "id": "FAQs",
+      "title": "FAQs"
+    },
+    {
+      "id": "contact",
+      "title": "Contact"
+    }
+  ],
+  "heroDetails": {
+    "headingText": "WELCOME TO MAVELI",
+    "headingTitle": [
+      "Making",
+      "Digital",
+      "Transactions Easier!"
+    ],
+    "headingParagraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+    "headingButtonText": [
+      "Get Started",
+      "Call Support"
+    ],
+    "headingActiveUsers": [
+      "140 Kt",
+      "Active Users"
+    ]
+  }
+}

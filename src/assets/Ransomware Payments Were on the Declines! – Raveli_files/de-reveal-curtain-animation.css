@@ -1,0 +1,100 @@
+.block-revealer {
+    /* transition: unset!important; */
+}
+
+/* @keyframes lr {
+    0%   { transform: scaleX(0); transform-origin: 0% 50%; }
+    20%  { transform: scaleX(0.5); transform-origin: 0% 50%; }
+    40% { transform: scaleX(1); transform-origin: 0% 50%; }
+    60%   { transform: scaleX(1); transform-origin: 100% 50%; }
+    80%  { transform: scaleX(0.5); transform-origin: 100% 50%; }
+    100% { transform: scaleX(0); transform-origin: 100% 50%; animation: unset; }
+}
+
+.de_reveal_curtain_direction_lr .block-revealer__element {
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    background-color: red;
+    animation-name: lr;
+    animation-duration: 1s;  
+}
+
+@keyframes rl {
+    0%   { transform: scaleX(0); transform-origin: 100% 50%; }
+    20%  { transform: scaleX(0.5); transform-origin: 100% 50%; }
+    40% { transform: scaleX(1); transform-origin: 100% 50%; }
+    60%   { transform: scaleX(1); transform-origin: 0% 50%; }
+    80%  { transform: scaleX(0.5); transform-origin: 0% 50%; }
+    100% { transform: scaleX(0); transform-origin: 0% 50%; animation: unset; }
+}
+
+.de_reveal_curtain_direction_rl .block-revealer__element {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    background-color: red;
+    animation-name: rl;
+    animation-duration: 1s;  
+}
+
+@keyframes tb {
+    0%   { transform: scaleY(0); transform-origin: 50% 0%; }
+    20%  { transform: scaleY(.5); transform-origin: 50% 0%; }
+    40% { transform: scaleY(1); transform-origin: 50% 0%; }
+    60% { transform: scaleY(1); transform-origin: 50% 100%; }
+    80%  { transform: scaleY(.5); transform-origin: 50% 100%; }
+    100% { transform: scaleY(0); transform-origin: 50% 100%; animation: unset; }
+}
+
+.de_reveal_curtain_direction_tb .block-revealer__element {
+    transform: scaleY(0);
+    transform-origin: 50% 0%;
+    background-color: red;
+    animation-name: tb;
+    animation-duration: 1s;  
+}
+
+@keyframes bt {
+    0%   { transform: scaleY(0); transform-origin: 50% 100%; }
+    20%  { transform: scaleY(.5); transform-origin: 50% 100%; }
+    40% { transform: scaleY(1); transform-origin: 50% 100%; }
+    60% { transform: scaleY(1); transform-origin: 50% 0%; }
+    80%  { transform: scaleY(.5); transform-origin: 50% 0%; }
+    100% { transform: scaleY(0); transform-origin: 50% 0%; animation: unset; }
+}
+
+.de_reveal_curtain_direction_bt .block-revealer__element {
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    background-color: red;
+    animation-name: bt;
+    animation-duration: 1s;  
+} */
+
+/* EASING */
+/* .de_reveal_easing_linear .block-revealer__element {
+    animation-timing-function: linear;
+}
+
+.de_reveal_easing_ease .block-revealer__element {
+    animation-timing-function: ease;
+}
+
+.de_reveal_easing_easeIn .block-revealer__element {
+    animation-timing-function: ease-in;
+}
+
+.de_reveal_easing_easeOut .block-revealer__element {
+    animation-timing-function: ease-out;
+}
+
+.de_reveal_easing_easeInOut .block-revealer__element {
+    animation-timing-function: ease-in-out;
+}
+
+.de_reveal_easing_swing .block-revealer__element {
+    animation-timing-function: cubic-bezier(.02, .01, .47, 1);
+}
+
+.de_reveal_animation_yes .block-revealer__content {
+    opacity: 0;
+} */

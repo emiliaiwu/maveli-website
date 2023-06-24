@@ -1,0 +1,28 @@
+.dethemekit_de-horizontal-scroll .de-carousel-active  .de-carousel-tab {
+  border:0px solid #6B7C8F;
+  border-radius: 4px;
+  /* background-color:red; */
+}
+.dethemekit_de-horizontal-scroll .de-carousel-active .de-carousel-tab h6 {
+  /* color:#fff; */
+}
+
+.dethemekit_show_pointer .dethemekit_child_de_carousel_1:hover,
+.dethemekit_show_pointer .dethemekit_child_de_carousel_2:hover,
+.dethemekit_show_pointer .dethemekit_child_de_carousel_3:hover,
+.dethemekit_show_pointer .dethemekit_child_de_carousel_4:hover {
+  cursor:pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .dethemekit_de-horizontal-scroll .elementor-container {
+        width:900px;
+    }
+    .dethemekit_de-horizontal-scroll {
+        overflow:scroll!important;
+    }
+    .dethemekit_de-horizontal-scroll .elementor-column {
+        width:auto;
+        padding:0 px 0px 0 ;
+    }
+}    

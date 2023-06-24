@@ -1,0 +1,69 @@
+/* Animation Type: DEFAULT */
+.de_reveal_animation_yes:not(.elementor-element-edit-mode):not(.de_reveal_animation_type_letter):not(.de_reveal_animation_type_blockcurtain) {
+    /* position: relative; */
+    opacity: 0;
+}
+
+section.de_reveal_animation_yes.de_reveal_animation_type_default.elementor-section {
+    transition: none;
+}
+
+/* On Section & Stagger */
+.de_reveal_animation_yes.de_reveal_animation_type_default.de_reveal_stagger_yes:not(.elementor-element-edit-mode) > .elementor-container > .elementor-column {
+    opacity: 0;
+}
+
+/* On Section */
+.elementor-section.de_reveal_animation_yes.de_reveal_animation_type_default:not(.de_reveal_stagger_yes):not(.elementor-element-edit-mode) {
+    opacity: 0;
+}
+
+/* Animation Type: BLOCK CURTAIN */
+.de_reveal_animation_yes.de_reveal_animation_type_blockcurtain:not(.elementor-element-edit-mode) > .elementor-widget-container {
+    opacity: 0;
+}
+
+/* Animation Type: LETTER */
+.de_reveal_animation_yes.de_reveal_animation_type_letter > .elementor-widget-container .letter-effect {
+    white-space: pre;
+}
+
+.de_reveal_animation_yes.de_reveal_animation_type_letter > .elementor-widget-container > * {
+    word-break: break-all;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_visible:not(.elementor-element-edit-mode) > .elementor-widget-container > * {
+    opacity: 1;
+}
+
+.de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_hidden:not(.elementor-element-edit-mode):not(.de_reveal_letter_animated) > .elementor-widget-container > * {
+    opacity: 1;
+}
+
+.de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_hidden.de_reveal_letter_animated:not(.elementor-element-edit-mode) > .elementor-widget-container > * {
+    opacity: 1;
+}
+
+.de_reveal_animation_yes.de_reveal_animation_type_letter:not(.elementor-element-edit-mode) > .elementor-widget-container > .letter-effect {
+    opacity: 1;
+}
+
+/* .de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_hidden:not(.elementor-element-edit-mode) > .elementor-widget-container > .letter-effect,
+.de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_hidden:not(.elementor-element-edit-mode) > .elementor-widget-container > .letter-effect > * {
+    opacity: 1;
+} */
+
+/* .de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_hidden:not(.elementor-element-edit-mode):not(.de_reveal_letter_animated) > .elementor-widget-container > * {
+    opacity: 0;
+} */
+
+/* .de_reveal_animation_yes.de_reveal_animation_type_letter.de_reveal_letter_initial_state_hidden:not(.elementor-element-edit-mode).de_reveal_letter_animated > .elementor-widget-container > * {
+    opacity: 1;
+} */
+
+.de_reveal_animation_yes .dethemekit-carousel-content-hidden {
+	visibility : hidden !important;
+}

@@ -1,0 +1,634 @@
+.de_staggering_hover_yes {
+    overflow: hidden;
+}
+
+.elementor-editor-active .de_staggering_animation_yes {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_shakeX {
+  -webkit-animation-name: shakeX;
+  animation-name: shakeX;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_shakeY {
+  -webkit-animation-name: shakeY;
+  animation-name: shakeY;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_headShake {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-name: headShake;
+  animation-name: headShake;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_swing {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_jello {
+  -webkit-animation-name: jello;
+  animation-name: jello;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_heartBeat {
+  -webkit-animation-name: heartBeat;
+  animation-name: heartBeat;
+  -webkit-animation-duration: calc(1s * 1.3);
+  animation-duration: calc(1s * 1.3);
+  -webkit-animation-duration: calc(var(--animate-duration) * 1.3);
+  animation-duration: calc(var(--animate-duration) * 1.3);
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backInDown {
+  -webkit-animation-name: backInDown;
+  animation-name: backInDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backInLeft {
+  -webkit-animation-name: backInLeft;
+  animation-name: backInLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backInRight {
+  -webkit-animation-name: backInRight;
+  animation-name: backInRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backInUp {
+  -webkit-animation-name: backInUp;
+  animation-name: backInUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backOutDown {
+  -webkit-animation-name: backOutDown;
+  animation-name: backOutDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backOutLeft {
+  -webkit-animation-name: backOutLeft;
+  animation-name: backOutLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backOutRight {
+  -webkit-animation-name: backOutRight;
+  animation-name: backOutRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_backOutUp {
+  -webkit-animation-name: backOutUp;
+  animation-name: backOutUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceIn {
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceOut {
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceOutLeft {
+  -webkit-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceOutRight {
+  -webkit-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInTopLeft {
+  -webkit-animation-name: fadeInTopLeft;
+  animation-name: fadeInTopLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInTopRight {
+  -webkit-animation-name: fadeInTopRight;
+  animation-name: fadeInTopRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInBottomLeft {
+  -webkit-animation-name: fadeInBottomLeft;
+  animation-name: fadeInBottomLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeInBottomRight {
+  -webkit-animation-name: fadeInBottomRight;
+  animation-name: fadeInBottomRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutDownBig {
+  -webkit-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutLeftBig {
+  -webkit-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutRightBig {
+  -webkit-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutUpBig {
+  -webkit-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutTopLeft {
+  -webkit-animation-name: fadeOutTopLeft;
+  animation-name: fadeOutTopLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutTopRight {
+  -webkit-animation-name: fadeOutTopRight;
+  animation-name: fadeOutTopRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutBottomRight {
+  -webkit-animation-name: fadeOutBottomRight;
+  animation-name: fadeOutBottomRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_fadeOutBottomLeft {
+  -webkit-animation-name: fadeOutBottomLeft;
+  animation-name: fadeOutBottomLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_flipOutX {
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_flipOutY {
+  -webkit-animation-duration: calc(1s * 0.75);
+  animation-duration: calc(1s * 0.75);
+  -webkit-animation-duration: calc(var(--animate-duration) * 0.75);
+  animation-duration: calc(var(--animate-duration) * 0.75);
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipOutY;
+  animation-name: flipOutY;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_lightSpeedInRight {
+  -webkit-animation-name: lightSpeedInRight;
+  animation-name: lightSpeedInRight;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_lightSpeedInLeft {
+  -webkit-animation-name: lightSpeedInLeft;
+  animation-name: lightSpeedInLeft;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_lightSpeedOutRight {
+  -webkit-animation-name: lightSpeedOutRight;
+  animation-name: lightSpeedOutRight;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_lightSpeedOutLeft {
+  -webkit-animation-name: lightSpeedOutLeft;
+  animation-name: lightSpeedOutLeft;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateIn {
+  -webkit-animation-name: rotateIn;
+  animation-name: rotateIn;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateInDownRight {
+  -webkit-animation-name: rotateInDownRight;
+  animation-name: rotateInDownRight;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateInUpRight {
+  -webkit-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateOut {
+  -webkit-animation-name: rotateOut;
+  animation-name: rotateOut;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateOutDownLeft {
+  -webkit-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateOutDownRight {
+  -webkit-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateOutUpLeft {
+  -webkit-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft;
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rotateOutUpRight {
+  -webkit-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_hinge {
+  -webkit-animation-duration: calc(1s * 2);
+  animation-duration: calc(1s * 2);
+  -webkit-animation-duration: calc(var(--animate-duration) * 2);
+  animation-duration: calc(var(--animate-duration) * 2);
+  -webkit-animation-name: hinge;
+  animation-name: hinge;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rollIn {
+  -webkit-animation-name: rollIn;
+  animation-name: rollIn;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_rollOut {
+  -webkit-animation-name: rollOut;
+  animation-name: rollOut;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomInDown {
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomInLeft {
+  -webkit-animation-name: zoomInLeft;
+  animation-name: zoomInLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomInRight {
+  -webkit-animation-name: zoomInRight;
+  animation-name: zoomInRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomInUp {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomOut {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomOutDown {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomOutLeft {
+  -webkit-animation-name: zoomOutLeft;
+  animation-name: zoomOutLeft;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomOutRight {
+  -webkit-animation-name: zoomOutRight;
+  animation-name: zoomOutRight;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_zoomOutUp {
+  -webkit-animation-name: zoomOutUp;
+  animation-name: zoomOutUp;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideOutRight {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+}
+
+.elementor-editor-active .elementor-element-editable.de_staggering_animation_type_slideOutUp {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+
+/* .de_staggering_hover_yes:not(.elementor-element-edit-mode)[class*='de_staggering_parent_animation_mousehover_'][class*='In'] .de_staggering_animation_yes.de_staggering_animation_mousehover_inherited,
+.de_staggering_animation_yes:not(.elementor-element-edit-mode)[class*='In'] {
+  opacity: 0;
+} */
+
+/*  Initial State Column: Hidden
+    Initial State Element: Inherited */  
+.de_staggering_hover_yes:not(.elementor-element-edit-mode).de_staggering_run_animation.de_staggering_parent_initial_state_hidden .de_staggering_animation_yes:not(.elementor-element-edit-mode).de_staggering_child_initial_state_inherited:not(.animate__animated) {
+  opacity: 0;
+}
+/* Editor Mode */
+.de_staggering_hover_yes.elementor-element-edit-mode.de_staggering_preview_on_hover_yes.de_staggering_run_animation.de_staggering_parent_initial_state_hidden .de_staggering_animation_yes.elementor-element-edit-mode.de_staggering_child_initial_state_inherited:not(.animate__animated) {
+  opacity: 0;
+}
+
+/*  Initial State Column: Hidden
+    Initial State Element: Hidden */  
+.de_staggering_hover_yes:not(.elementor-element-edit-mode).de_staggering_run_animation.de_staggering_parent_initial_state_hidden .de_staggering_animation_yes:not(.elementor-element-edit-mode).de_staggering_child_initial_state_hidden:not(.animate__animated) {
+  opacity: 0;
+}
+/* Editor Mode */
+.de_staggering_hover_yes.elementor-element-edit-mode.de_staggering_preview_on_hover_yes.de_staggering_run_animation.de_staggering_parent_initial_state_hidden .de_staggering_animation_yes.elementor-element-edit-mode.de_staggering_child_initial_state_hidden:not(.animate__animated) {
+  opacity: 0;
+}
+
+/*  Initial State Column: Hidden
+    Initial State Element: Visible */  
+.de_staggering_hover_yes:not(.elementor-element-edit-mode).de_staggering_parent_initial_state_hidden .de_staggering_animation_yes:not(.elementor-element-edit-mode).de_staggering_child_initial_state_visible {
+  opacity: 1;
+}
+
+/*  Initial State Column: Visible
+    Initial State Element: Inherited */  
+.de_staggering_hover_yes:not(.elementor-element-edit-mode).de_staggering_parent_initial_state_visible .de_staggering_animation_yes:not(.elementor-element-edit-mode).de_staggering_child_initial_state_inherited {
+  opacity: 1;
+}
+
+/*  Initial State Column: Visible
+    Initial State Element: Hidden */  
+.de_staggering_hover_yes:not(.elementor-element-edit-mode).de_staggering_parent_initial_state_visible.de_staggering_run_animation .de_staggering_animation_yes:not(.elementor-element-edit-mode).de_staggering_child_initial_state_hidden:not(.animate__animated) {
+  opacity: 0;
+}
+/* Editor Mode */
+.de_staggering_hover_yes.elementor-element-edit-mode.de_staggering_preview_on_hover_yes.de_staggering_run_animation.de_staggering_parent_initial_state_visible .de_staggering_animation_yes.elementor-element-edit-mode.de_staggering_child_initial_state_hidden:not(.animate__animated) {
+  opacity: 0;
+}
+
+/*  Initial State Column: Visible
+    Initial State Element: Visible */  
+.de_staggering_hover_yes:not(.elementor-element-edit-mode).de_staggering_parent_initial_state_visible .de_staggering_animation_yes:not(.elementor-element-edit-mode).de_staggering_child_initial_state_visible {
+  opacity: 1;
+}
