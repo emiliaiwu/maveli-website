@@ -33,7 +33,7 @@ import client8 from "./client_8.png";
 
 import collage1 from "./composite-collage-of-happy-diverse-multicultural-1-G8UCHFH.jpg";
 import collage2 from "./composite-collage-of-happy-diverse-multicultural-2-G8UCHFH.jpg";
-import collage3 from "./composite-collage-of-happy-diverse-multicultural-3-G8UCHFH.jpg";
+import collage3 from "./composite-collage-of-happy-diverse-multicultural-7-G8UCHFH.jpg";
 import collage4 from "./composite-collage-of-happy-diverse-multicultural-4-G8UCHFH.jpg";
 import collage5 from "./composite-collage-of-happy-diverse-multicultural-5-G8UCHFH.jpg";
 import collage6 from "./composite-collage-of-happy-diverse-multicultural-6-G8UCHFH.jpg";

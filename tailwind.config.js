@@ -8,13 +8,15 @@ export default {
 				primary: "#FEBFBB",
 				secondary: "#73FF71",
 				tertiary: "#F1FF9F",
-        headingColor: "rgba(0, 0, 0, 0.4)",
-        paragraph: "rgb(122, 122, 122)",
+				headingColor: "rgba(0, 0, 0, 0.4)",
+				paragraph: "rgb(122, 122, 122)",
 			},
 			fontFamily: {
-        grotesk: ["Space Grotesk", "sans-serif"],
-        DMSans: ["DM Sans", "sans-serif"],
-        
+				grotesk: ["Space Grotesk", "sans-serif"],
+				DMSans: ["DM Sans", "sans-serif"],
+			},
+			opacity: {
+				100: "1",
 			},
 		},
 		screens: {

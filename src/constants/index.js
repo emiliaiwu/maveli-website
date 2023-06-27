@@ -43,13 +43,21 @@ import {
 	FaBuffer,
 	FaRegEye,
 	FaHeadphonesAlt,
+	FaEllo,
 } from "react-icons/fa";
 import { LuShieldCheck, LuServer } from "react-icons/lu";
+import { BiChevronDown, BiSearch, BiDownload } from "react-icons/bi"
+import { CgMenuRight } from "react-icons/cg";
+import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+
+export {
+BiChevronDown, RxHamburgerMenu, BiSearch, BiDownload, CgMenuRight, RxCross2, FaEllo
+}
 
 // NAV
 export const navLinks = [
 	{
-		id: "home",
+		id: "",
 		title: "Home",
 	},
 	{
@@ -68,13 +76,20 @@ export const navLinks = [
 		id: "blog",
 		title: "Blog",
 	},
+
 	{
-		id: "FAQs",
-		title: "FAQs",
-	},
-	{
-		id: "contact",
-		title: "Contact",
+		id: "help",
+		title: "Help",
+		sublinks: [
+			{
+				id: "faq",
+				title: "FAQs",
+			},
+			{
+				id: "contact",
+				title: "Contact",
+			},
+		],
 	},
 ];
 
@@ -91,7 +106,7 @@ export const heroDetails = {
 export const trustedPartners = {
 	heading: "SOME OF OUR TRUSTED PARTNERS",
 	images: [
-		(client1,
+		client1,
 		client2,
 		client3,
 		client4,
@@ -99,7 +114,7 @@ export const trustedPartners = {
 		client5,
 		client6,
 		client7,
-		client8),
+		client8,
 	],
 };
 
