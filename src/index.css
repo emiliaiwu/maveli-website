@@ -2,16 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	section {
+	@apply py-[70px] w-full px-6 sm:px-[30px]
+	}
+}
+
 .active {
 	opacity: 1;
 }
 
-.dropdown-item {
-	opacity: 0;
-	visibility: hidden;
+.hero-bg-img {
+	background-image: url("./assets/blackbg2.png");
+	background-size: cover;
+	background-position: center;
 }
 
-.dropdown:hover .dropdown-item {
-	opacity: 1;
-	visibility: visible;
+.about-bg-img {
+	background-image: url("./assets/happy-african-teenager-holding-cell-phone-using-mo-B6WZNZE-e1675420454910-1024x683.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.logo-slide {
+	display: inline-block;
+	animation: 0s slide infinite linear;
+}
+
+.logo-slide:hover {
+	animation-play-state: paused;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }

@@ -1,9 +1,24 @@
+import {
+	Hero,
+	TrustedPartners,
+	AboutSection,
+	Stats,
+	MindfulDesign,
+	Features
+} from "../components";
 
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+	return (
+		<>
+			<Hero />
+			<TrustedPartners />
+			<AboutSection />
+			<Stats />
+			<MindfulDesign />
+			<Features/>
+		</>
+	);
+};
 
-export default Home
+export default Home;

@@ -1,24 +1,24 @@
+import { BiChevronDown } from "../../constants";
+import { NavLink, Link } from "react-router-dom";
+import HeaderContext from "../../context/HeaderContext";
+import { useContext } from "react";
 
-import { BiChevronDown } from "../constants";
-import { NavLink } from "react-router-dom";
-
-
-const MobileMenuItem = ({ title, sublinks, id, isDropdownOpen, handleDropdownToggle }) => {
-	
+const MobileMenuItem = ({ title, sublinks, id }) => {
+	const { isDropdownOpen, handleDropdownToggle } = useContext(HeaderContext);
 
 	return (
-		<li className='mb-2 font-grotesk text-sm font-semibold uppercase tracking-normal text-black'>
+		<li className='mb-2 font-grotesk text-sm font-semibold uppercase tracking-widest text-black'>
 			{sublinks ? (
 				<div
 					className='relative flex items-center'
 					onClick={handleDropdownToggle}
 				>
-					<NavLink
+					<Link
 						to='#'
 						className='mr-6 cursor-pointer font-grotesk text-sm font-semibold uppercase tracking-widest opacity-50 hover:opacity-100'
 					>
 						{title}
-					</NavLink>
+					</Link>
 					<BiChevronDown
 						size={20}
 						className={`${
@@ -29,7 +29,7 @@ const MobileMenuItem = ({ title, sublinks, id, isDropdownOpen, handleDropdownTog
 					/>
 
 					{isDropdownOpen && (
-						<ul className='absolute left-0 top-4 z-10 w-[180px] transform p-5 outline-none'>
+						<ul className='absolute left-0 top-4 z-10 transform bg-white p-5 outline-none'>
 							{sublinks.map((sublink) => (
 								<li
 									key={sublink.id}

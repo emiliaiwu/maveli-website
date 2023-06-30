@@ -1,23 +1,17 @@
 import { NavLink } from "react-router-dom";
 import DropdownMenu from "./DropDown";
-import { BiChevronDown } from "../constants";
-// import HeaderContext from "../context/HeaderContext";
-// import { useContext } from "react";
+import { BiChevronDown } from "../../constants";
+import HeaderContext from "../../context/HeaderContext";
+import { useContext } from "react";
 
-const NavItem = ({
-	nav,
-	handleDropdownToggle,
-	handleDropdownEnter,
-	isDropdownOpen,
-	handleDropdownLeave,
-}) => {
+const NavItem = ({ nav }) => {
 	const { id, title, sublinks } = nav;
-	// const {
-	// 	handleDropdownToggle,
-	// 	handleDropdownEnter,
-	// 	isDropdownOpen,
-	// 	handleDropdownLeave,
-	// } = useContext(HeaderContext);
+	const {
+		handleDropdownToggle,
+		handleDropdownEnter,
+		isDropdownOpen,
+		handleDropdownLeave,
+	} = useContext(HeaderContext);
 
 	return (
 		<li className='px-6 font-grotesk text-sm font-semibold uppercase tracking-widest text-black'>
@@ -28,7 +22,7 @@ const NavItem = ({
 					onMouseLeave={handleDropdownLeave}
 				>
 					<button
-						className='mr-1 cursor-pointer font-grotesk text-sm font-semibold uppercase tracking-widest opacity-50 hover:opacity-100'
+						className='mr-1 cursor-pointer font-grotesk text-sm font-semibold uppercase tracking-widest opacity-50 hover:opacity-100 duration-200 ease'
 						onClick={handleDropdownToggle}
 					>
 						{title}
@@ -47,7 +41,7 @@ const NavItem = ({
 			) : (
 				<NavLink
 					to={`/${id}`}
-					className='cursor-pointer opacity-50 hover:opacity-100'
+					className='cursor-pointer opacity-50 hover:opacity-100 duration-200 ease'
 				>
 					{title}
 				</NavLink>

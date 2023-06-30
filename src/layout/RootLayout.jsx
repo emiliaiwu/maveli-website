@@ -1,17 +1,10 @@
-import { Outlet } from "react-router-dom";
-import { Header, Footer } from "../components";
-
+import { Header, Footer, Main } from "../components";
 
 export const RootLayout = () => {
 	return (
-		<div className=' min-h-screen w-full'>
-			
-				<Header />
-			
-
-			<main className='mt-20 h-[1240px]'>
-				<Outlet />
-			</main>
+		<div className='max-w-screen min-h-screen'>
+			<Header />
+			<Main />
 			<Footer />
 		</div>
 	);

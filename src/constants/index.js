@@ -51,7 +51,7 @@ import { CgMenuRight } from "react-icons/cg";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 
 export {
-BiChevronDown, RxHamburgerMenu, BiSearch, BiDownload, CgMenuRight, RxCross2, FaEllo
+BiChevronDown, RxHamburgerMenu, BiSearch, BiDownload, CgMenuRight, RxCross2, FaEllo, FaChrome
 }
 
 // NAV
@@ -99,7 +99,7 @@ export const heroDetails = {
 	headingParagraph:
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
 	headingButtonText: ["Get Started", "Call Support"],
-	ActiveUsers: [collage1, collage2, collage3, collage4],
+	ActiveUsersObj: [collage1, collage2, collage3, collage4],
 	heroImage: heroImg,
 };
 
@@ -110,7 +110,6 @@ export const trustedPartners = {
 		client2,
 		client3,
 		client4,
-		client5,
 		client5,
 		client6,
 		client7,
@@ -123,7 +122,7 @@ export const aboutMaveli = {
 	headingTitle: "Make Your Transactions Quick and Easy",
 	headingParagraph:
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae rhoncus ipsum. Nunc eleifend ultrices ligula eu pharetra. ",
-	Image: aboutImg,
+	image: aboutImg,
 	phoneImage: PSD041,
 	details: [
 		{
@@ -131,12 +130,22 @@ export const aboutMaveli = {
 			icon: FaChrome,
 			heading: "Cross-Browser",
 			paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			bgColor: "bg-tertiary",
+			iconColor: "text-white",
+			iconBgColor: "bg-black",
+			fontColor: "text-black",
+			borderColor: "border-black",
 		},
 		{
 			id: "detail-2",
 			icon: FaWrench,
 			heading: "Amazing Features",
 			paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+			bgColor: "bg-black",
+			iconColor: "text-black",
+			iconBgColor: "bg-white",
+			fontColor: "text-white",
+			borderColor: "border-paragraph",
 		},
 
 		{
@@ -145,6 +154,11 @@ export const aboutMaveli = {
 			heading: "Easy Payment",
 			paragraph:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.",
+			bgColor: "bg-primary",
+			iconColor: "text-white",
+			iconBgColor: "text-black",
+			fontColor: "text-black",
+			borderColor: "border-black",
 		},
 	],
 };

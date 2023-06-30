@@ -18,13 +18,17 @@ export default {
 			opacity: {
 				100: "1",
 			},
+			boxShadow: {
+				box: "5px 5px 0px 0px",
+				circle: "2px 2px 0px 0px"
+			},
 		},
 		screens: {
 			xs: "480px",
 			ss: "620px",
-			sm: "768px",
-			md: "1060px",
-			lg: "1200px",
+			sm: "767px",
+			md: "1025px",
+			lg: "1400px",
 			xl: "1700px",
 		},
 	},
