@@ -48,6 +48,7 @@ const Hero = () => {
 					<div className='hero-bg-img mt-[70px] w-full overflow-hidden rounded-[10px] border-[0.6px] border-black bg-tertiary sm:ml-8 md:mb-[50px] md:ml-[50px] md:mt-[0px]'>
 						<div className='container mt-[30px] flex w-full items-end '>
 							<img
+								loading="lazy"
 								src={heroImage}
 								className='inline-block aspect-auto h-auto w-[70%] max-w-[704px] align-middle sm:w-[80%]'
 							/>

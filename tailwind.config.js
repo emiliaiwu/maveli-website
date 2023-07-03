@@ -20,7 +20,8 @@ export default {
 			},
 			boxShadow: {
 				box: "5px 5px 0px 0px",
-				circle: "2px 2px 0px 0px"
+				circle: "2px 2px 0px 0px",
+				circle2: "3px 3px 0px 0px",
 			},
 		},
 		screens: {

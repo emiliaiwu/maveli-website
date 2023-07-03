@@ -4,8 +4,14 @@ import {
 	AboutSection,
 	Stats,
 	MindfulDesign,
-	Features
+	Features,
+	HowItWorks,
+	PricingPlan,
+	Testimonials,
+	FAQ,
 } from "../components";
+
+
 
 
 const Home = () => {
@@ -16,7 +22,11 @@ const Home = () => {
 			<AboutSection />
 			<Stats />
 			<MindfulDesign />
-			<Features/>
+			<Features />
+			<HowItWorks />
+			<PricingPlan />
+			<Testimonials />
+			<FAQ/>
 		</>
 	);
 };

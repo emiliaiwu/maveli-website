@@ -5,8 +5,8 @@ import {
 	iPhone5,
 	heroImg,
 	aboutImg,
-    blogImg1,
-    blogImg4,
+	blogImg1,
+	blogImg4,
 	appleStorepng,
 	playStorepng,
 	asset1,
@@ -30,8 +30,8 @@ import {
 	PSD021,
 	PSD041,
 	blogImg2,
-    blogImg3,
-    blogImg5,
+	blogImg3,
+	blogImg5,
 } from "../assets";
 
 // import icons
@@ -45,14 +45,38 @@ import {
 	FaHeadphonesAlt,
 	FaEllo,
 } from "react-icons/fa";
+
+
+
 import { LuShieldCheck, LuServer } from "react-icons/lu";
-import { BiChevronDown, BiSearch, BiDownload } from "react-icons/bi"
+import {
+	BiChevronDown,
+	BiSearch,
+	BiDownload,
+	BiSolidRightArrow,
+} from "react-icons/bi";
+
+
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+import { BsArrowRight } from "react-icons/bs";
+import { FiCheck } from "react-icons/fi";
+
 
 export {
-BiChevronDown, RxHamburgerMenu, BiSearch, BiDownload, CgMenuRight, RxCross2, FaEllo, FaChrome
-}
+	FiCheck,
+	BiChevronDown,
+	RxHamburgerMenu,
+	BiSearch,
+	BiDownload,
+	CgMenuRight,
+	RxCross2,
+	FaEllo,
+	FaChrome,
+	BsArrowRight,
+	LuShieldCheck,
+	BiSolidRightArrow,
+};
 
 // NAV
 export const navLinks = [
@@ -218,7 +242,7 @@ export const ourFeatures = {
 export const howItWorks = {
 	text: "SEE HOW IT WORKS",
 	title: "The New Way of Money Transfer",
-	paragragh:
+	paragraph:
 		"Fusce porta, felis et facilisis tincidunt, metus eros mollis nibh, venenatis tempor arcu massa a augue. Suspendisse mattis arcu mi, id fringilla urna accumsan in. Nam ornare nunc metus.",
 	image: blogImg3,
 	buttonText: "Learn More",
@@ -231,8 +255,10 @@ export const pricingPlan = {
 	pricing: [
 		{
 			id: "pricing-1",
-			perUser: "$9.50",
+			amount: "$9.50",
+			per: "/ User",
 			name: "Basic Plan",
+			bgColor: "bg-white",
 			description:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.",
 			listTitle: "What's included?",
@@ -246,8 +272,10 @@ export const pricingPlan = {
 		},
 		{
 			id: "pricing-2",
-			perUser: "$10.50",
+			amount: "$10.50",
+			per: "/ User",
 			name: "StartUp Plan",
+			bgColor: "bg-tertiary",
 			description:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.",
 			listTitle: "What's included?",
@@ -261,8 +289,10 @@ export const pricingPlan = {
 		},
 		{
 			id: "pricing-3",
-			perUser: "$12.00",
+			amount: "$12.00",
+			per: "/ Event",
 			name: "Deluxe Plan",
+			bgColor: "bg-white",
 			description:
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.",
 			listTitle: "What's included?",
@@ -287,7 +317,7 @@ export const testimonials = {
 			rating: 4,
 			message:
 				"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet.",
-			image: client1,
+			image: collage1,
 			name: "John Doe",
 			occupation: "Customer",
 		},
@@ -296,7 +326,7 @@ export const testimonials = {
 			rating: 4,
 			message:
 				"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet.",
-			image: client2,
+			image: collage2,
 			name: "John Doe",
 			occupation: "Customer",
 		},
@@ -305,7 +335,7 @@ export const testimonials = {
 			rating: 4,
 			message:
 				"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet.",
-			image: client3,
+			image: collage3,
 			name: "John Doe",
 			occupation: "Customer",
 		},
@@ -314,8 +344,8 @@ export const testimonials = {
 			rating: 4,
 			message:
 				"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet.",
-			image: client4,
-			name: "John Doe",
+			image: collage4,
+			name: "Jane Doe",
 			occupation: "Customer",
 		},
 		{
@@ -323,7 +353,7 @@ export const testimonials = {
 			rating: 4,
 			message:
 				"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet.",
-			image: client5,
+			image: collage5,
 			name: "John Doe",
 			occupation: "Customer",
 		},
@@ -332,8 +362,8 @@ export const testimonials = {
 			rating: 4,
 			message:
 				"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet.",
-			image: client6,
-			name: "John Doe",
+			image: collage6,
+			name: "Jane Doe",
 			occupation: "Customer",
 		},
 	],
@@ -350,7 +380,7 @@ export const achievements = {
 	asset: [asset1, asset2, asset3, asset4],
 };
 
-export const FAQs = {
+export const faqs = {
 	text: "FAQS",
 	title: "Frequently Asked Questions",
 	image: iPhone5,
@@ -358,7 +388,7 @@ export const FAQs = {
 		{
 			title: "How many speakers at this event?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus neque eget eros aliquet, sit amet dignissim nisl venenatis.",
+				"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit, magnam molestias sunt quisquam id beatae aliquid. Dolores, eius labore consectetur dolore fuga iste nobis fugiat dignissimos quia numquam et corporis fugit qui quis perferendis voluptatum laboriosam, assumenda repellat.",
 		},
 		{
 			title: "Is there a special offer for a student?",
@@ -368,7 +398,7 @@ export const FAQs = {
 		{
 			title: "Can I get a discount for multiple purchases?",
 			content:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus neque eget eros aliquet, sit amet dignissim nisl venenatis.",
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus neque eget eros aliquet, sit amet dignissim nisl venenatis. est, nulla unde quod sit dolorum maiores distinctio asperiores amet explicabo",
 		},
 		{
 			title: "What payment methods do you provide?",
