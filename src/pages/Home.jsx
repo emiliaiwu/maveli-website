@@ -8,8 +8,10 @@ import {
 	HowItWorks,
 	PricingPlan,
 	Testimonials,
-	FAQ,
+	Faq,
+	NewsletterSection,
 } from "../components";
+import ArticleSection from "../components/ArticleSection";
 
 
 
@@ -26,7 +28,9 @@ const Home = () => {
 			<HowItWorks />
 			<PricingPlan />
 			<Testimonials />
-			<FAQ/>
+			<Faq />
+			<ArticleSection />
+			<NewsletterSection/>
 		</>
 	);
 };

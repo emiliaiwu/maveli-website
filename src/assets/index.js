@@ -38,6 +38,23 @@ import collage4 from "./composite-collage-of-happy-diverse-multicultural-4-G8UCH
 import collage5 from "./composite-collage-of-happy-diverse-multicultural-5-G8UCHFH.jpg";
 import collage6 from "./composite-collage-of-happy-diverse-multicultural-6-G8UCHFH.jpg";
 
+
+import teamMember1 from "./collage-set-of-happy-diverse-multicultural-men4-6VFVALQ.jpg";
+import teamMember2 from "./composite-collage-of-young-people-expressing-posit3-TSH2ST9.jpg";
+import teamMember3 from "./collage-set-of-happy-diverse-multicultural-men1-6VFVALQ.jpg";
+import teamMember4 from "./collage-set-of-happy-diverse-multicultural-men2-6VFVALQ.jpg";
+import teamMember5 from "./multiethnic-millennial-guys-gesturing-and-grimacin1-FYV73Z4.jpg";
+import teamMember6 from "./collage-set-of-happy-diverse-multicultural-men3-6VFVALQ.jpg";
+import teamMember7 from "./composite-collage-of-young-people-expressing-posit1-TSH2ST9.jpg";
+import teamMember8 from "./multiethnic-millennial-guys-gesturing-and-grimacin2-FYV73Z4.jpg";
+
+
+import officeImg1 from "./stylish-and-cozy-interior-of-dining-room-5T56DVE.jpg"
+import officeImg2 from "./stylish-composition-of-dining-room-interior-VD35GAT.jpg";
+import officeImg3 from "./view-of-office-PQPH8KK.jpg";
+
+import dashBoardImg from "./Banking-Dashboard-1024x662.jpg"
+
 export {
 	iPhone2,
 	iPhone3,
@@ -70,5 +87,17 @@ export {
 	blogImg2,
     blogImg3,
     blogImg4,
-    blogImg5
+	blogImg5,
+	teamMember1,
+	teamMember2,
+	teamMember3,
+	teamMember4,
+	teamMember5,
+	teamMember6,
+	teamMember7,
+	teamMember8,
+	officeImg1,
+	officeImg2,
+	officeImg3,
+	dashBoardImg
 };

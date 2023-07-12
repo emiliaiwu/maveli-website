@@ -1,9 +1,18 @@
+import { AllBlogposts, NewsletterSection, PageHeader } from "../components";
+
+
 
 
 const Blog = () => {
-  return (
-    <div>Blog</div>
-  )
-}
+	return (
+		<>
+			<PageHeader title={"Blog & News"} location={"Blog"} />
+			<AllBlogposts />
+			<NewsletterSection />
+			
+			
+		</>
+	);
+};
 
-export default Blog
+export default Blog;

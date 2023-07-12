@@ -1,43 +1,38 @@
 import Logo from "../Logo";
-import { useContext } from "react";
-import HeaderContext from "../../context/HeaderContext";
-import SearchButton from "./SearchButton";
+import { useState } from "react";
 import Navbar from "./Navbar";
 import MobileMenu from "./MobileMenu";
 import MobileMenuToggle from "./MobileMenuToggle";
+import { styles } from "../../style";
 import DownloadButton from "./DownloadButton";
 
+
 const Header = () => {
-	const { isActive } = useContext(HeaderContext);
+	const [isOpen, setIsOpen] = useState(false);
+
+	const handleMenuToggle = () => {
+		setIsOpen((pre) => !pre);
+	};
 
 	return (
-		<header
-			className={`z-[9999] fixed left-0 top-0 mb-6 w-full bg-white px-6 md:px-10 ${
-				isActive ? "shadow-md" : "shadow-none"
-			}`}
-		>
+		<header className='fixed left-0 top-0 z-[9999] w-full bg-white px-6 sm:px-8 mdd:px-12'>
 			<div
-				className={` md:max-w-[1240px] mx-auto flex w-full items-center justify-between bg-white py-4 md:py-5 leading-[25px] ${
-					isActive ? "border-none" : "border-b-[0.6px] border-black"
-				}`}
+				className={`${styles.flexBetween} mx-auto border-b-[0.6px] border-black bg-white py-4 md:py-5
+				 ${styles.boxWidth}`}
 			>
-				<Logo />
+				<Logo
+					height='h-[1.8rem]'
+					width='h-[1.8rem]'
+					textSize='text-xl sm:text-2xl'
+				/>
 				<Navbar />
-
-				{/* Search and Download buttons */}
-				<div className='flex items-center justify-end gap-4'>
-					<SearchButton />
-
-					<DownloadButton
-						text={"Download"}
-						link={"/"}
-						bgColor={"bg-tertiary"}
+				<div className='flex items-center justify-end gap-5'>
+					<DownloadButton text='Download' link='/' bgColor='bg-tertiary' />
+					<MobileMenuToggle
+						handleMenuToggle={handleMenuToggle}
+						isOpen={isOpen}
 					/>
-
-					<MobileMenuToggle />
-
-					{/* Mobile Menu */}
-					<MobileMenu />
+					<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
 				</div>
 			</div>
 		</header>

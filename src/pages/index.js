@@ -6,7 +6,10 @@ import Contact from "./Contact";
 import Pricing from "./Pricing";
 import Product from "./Product";
 import FAQ from "./FAQ";
+import BlogpostPage from "./BlogpostPage";
+
+
 
 export {
-    About, Page404, Pricing, Product, Blog, Contact, FAQ, Home
+    About, Page404, Pricing, Product, Blog, Contact, FAQ, Home, BlogpostPage
 };

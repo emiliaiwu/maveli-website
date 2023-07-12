@@ -3,6 +3,7 @@ import { BiSolidRightArrow, howItWorks } from "../constants";
 import { H2Header, Heading, InfoTextCenter } from "./Texts";
 import Button from "./Button";
 import Video from "./Video";
+import { styles } from "../style";
 
 const HowItWorks = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,9 @@ const HowItWorks = () => {
 
 	return (
 		<section>
-			<div className='mx-auto flex w-full flex-col items-stretch overflow-hidden rounded-[8px] rounded-b-[8px] border border-black sm:flex-row-reverse md:max-w-[1300px] relative'>
+			<div
+				className={`mx-auto flex w-full flex-col items-stretch overflow-hidden rounded-[8px] rounded-b-[8px] border border-black sm:flex-row-reverse ${styles.boxWidth} relative`}
+			>
 				<div className='flex flex-col items-center gap-4 bg-tertiary px-[30px] py-[50px] text-center sm:w-[50%] sm:items-start sm:px-[50px] sm:py-[70px] sm:text-left md:px-[70px] md:py-[140px]'>
 					<Heading text={text} />
 					<H2Header text={title} />
@@ -34,7 +37,7 @@ const HowItWorks = () => {
 				<div className='howitworks-bg-img flex w-full items-center justify-center border-t border-black sm:w-[50%] sm:border-r  sm:border-t-0 '>
 					<div className='py-[120px]'>
 						<div
-							className='ease flex h-20 w-20 items-center justify-center rounded-full border border-black bg-white shadow-circle2 duration-200 hover:bg-tertiary '
+							className={` ${styles.flexCenter} ease h-20 w-20 rounded-full border border-black bg-white shadow-circle2 duration-200 hover:bg-tertiary `}
 							onClick={openModal}
 						>
 							<BiSolidRightArrow className='text-[30px] ' />

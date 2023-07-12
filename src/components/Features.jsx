@@ -1,14 +1,15 @@
 import { ourFeatures } from "../constants";
+import { styles } from "../style";
 import { FeatureBox } from "./Box";
 import { H2Header, Heading } from "./Texts";
 
 const Features = () => {
 	const {text, title, features} = ourFeatures;
 	return (
-		<section className='flex items-center justify-center'>
-			<div className='flex flex-col items-center md:max-w-[1240px] md:px-8 lg:px-0 gap-8'>
+		<section id="features" className="bg-paragraph2">
+			<div className={`mx-auto flex flex-col items-center ${styles.boxWidth} gap-8`}>
 				{/* heading */}
-				<div className='flex shrink basis-auto flex-col gap-6 text-center'>
+				<div className='flex flex-col gap-6 text-center'>
 					<Heading text={text} />
 					<div className='sm:mx-[80px]  md:mx-[250px] lg:mx-[350px]'>
 						<H2Header text={title} />

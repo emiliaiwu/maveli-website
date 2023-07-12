@@ -1,8 +1,12 @@
+import { OfficeAddress, PageHeader } from "../components"
 
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <PageHeader title={"Our Contact"} location={"Contact"}/>
+      <OfficeAddress/>
+    </>
   )
 }
 

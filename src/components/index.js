@@ -1,4 +1,3 @@
-import Breadcrumbs from "./Breadcrumbs";
 import Footer from "./Footer";
 import Header from "./header/Header";
 import Main from "./Main";
@@ -11,10 +10,22 @@ import Features from "./Features";
 import HowItWorks from "./HowItWorks";
 import PricingPlan from "./PricingPlan";
 import Testimonials from "./Testimonials";
-import FAQ from "./FAQ";
+import Faq from "./FAQ";
+import NewsletterSection from "./NewsletterSection";
+import Button from "./Button";
+import PageHeader from "./PageHeader";
+import OurValues from "./OurValues";
+import Achievements from "./Achievements";
+import Teams from "./Teams";
+import OfficeAddress from "./OfficeAddress";
+import DeskTopMode from "./DeskTopMode";
+import AllBlogposts from "./AllBlogposts";
+import Socials from "./Socials";
+import SingleBlogpost from "./SingleBlogpost";
+import Articles from "./Articles";
+import BlogpostsSection from "./BlogpostsSection";
 
 export {
-	Breadcrumbs,
 	Footer,
 	Header,
 	Main,
@@ -25,7 +36,20 @@ export {
 	MindfulDesign,
 	Features,
 	HowItWorks,
-    PricingPlan,
+	PricingPlan,
 	Testimonials,
-	FAQ,
+	Faq,
+	NewsletterSection,
+	Button,
+	PageHeader,
+	OurValues,
+	Achievements,
+	Teams,
+	OfficeAddress,
+	DeskTopMode,
+	AllBlogposts,
+	Socials,
+	SingleBlogpost,
+	Articles,
+	BlogpostsSection,
 };

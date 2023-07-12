@@ -2,14 +2,17 @@ import { pricingPlan } from "../constants";
 import { H2Header, Heading } from "./Texts";
 import Button from "./Button";
 import { PricingBox } from "./Box";
+import { styles } from "../style";
 
 const PricingPlan = () => {
 	const { text, title, buttonText, pricing } = pricingPlan;
 
 	return (
-		<section className="flex justify-center items-center">
-			<div className='flex flex-col items-center gap-10 md:max-w-[1240px] md:px-8 lg:px-0'>
-				<div className=' flex shrink basis-auto flex-col items-center gap-7 text-center'>
+		<section>
+			<div
+				className={`${styles.boxWidth} mx-auto flex flex-col items-center gap-10 md:max-w-[1240px] md:px-8 lg:px-0 `}
+			>
+				<div className=' flex flex-col items-center gap-7 text-center'>
 					<Heading text={text} />
 					<div className=' sm:mx-[80px] md:mx-[250px] lg:mx-[350px]'>
 						<H2Header text={title} />
@@ -31,12 +34,12 @@ const PricingPlan = () => {
 						/>
 					))}
 				</div>
-				<div className="mt-5">
+				<div className='mt-10'>
 					<Button
 						text={buttonText}
 						bgColor={"bg-black"}
 						textColor={"text-white"}
-						link={"/"}
+						link={"/contact"}
 					/>
 				</div>
 			</div>

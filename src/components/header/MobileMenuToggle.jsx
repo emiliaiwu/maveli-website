@@ -1,11 +1,12 @@
-import HeaderContext from "../../context/HeaderContext";
 import { RxCross2, RxHamburgerMenu } from "../../constants";
-import { useContext } from "react";
 
-const MobileMenuToggle = () => {
-	const { isOpen, handleMenuToggle } = useContext(HeaderContext);
+const MobileMenuToggle = ({ handleMenuToggle, isOpen }) => {
 	return (
-		<button className='cursor-pointer md:hidden hover:opacity-50 duration-200 ease ml-6' onClick={handleMenuToggle}>
+		<button
+			role="navigation"
+			className='ease cursor-pointer duration-200 hover:opacity-50 md:hidden'
+			onClick={handleMenuToggle}
+		>
 			{isOpen ? (
 				<RxCross2 className='text-[25px] ss:text-[30px]' />
 			) : (

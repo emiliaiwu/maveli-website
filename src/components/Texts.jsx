@@ -10,7 +10,7 @@ export function Heading({ text }) {
 
 export function InfoText({ text }) {
 	return (
-		<div className='px-1 xs:mr-[80px] sm:mr-[50px] md:mr-[150px]'>
+		<div className='px-1 xs:mr-[80px] sm:mr-[50px] md:mr-[120px]'>
 			<p className='mb-3 text-left font-DMSans text-sm leading-[25.5px] text-paragraph md:text-[15px] md:leading-[27px]'>
 				{text}
 			</p>
@@ -37,3 +37,4 @@ export function H2Header({ text }) {
 	
 	);
 }
+

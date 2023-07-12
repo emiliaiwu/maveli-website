@@ -32,8 +32,24 @@ import {
 	blogImg2,
 	blogImg3,
 	blogImg5,
+	teamMember1,
+	teamMember2,
+	teamMember3,
+	teamMember4,
+	teamMember5,
+	teamMember6,
+	teamMember7,
+	teamMember8,
+	officeImg1,
+	officeImg2,
+	officeImg3,
+	dashBoardImg
 } from "../assets";
 
+// images
+export { blogImg1, blogImg2, blogImg3, blogImg4, blogImg5, aboutImg };
+
+// *****************************************************ICON START******************************************
 // import icons
 import {
 	FaChrome,
@@ -44,10 +60,13 @@ import {
 	FaRegEye,
 	FaHeadphonesAlt,
 	FaEllo,
+	FaCircle,
+	FaInstagram,
+	FaTwitter,
+	FaFacebookF,
 } from "react-icons/fa";
 
-
-
+// icons
 import { LuShieldCheck, LuServer } from "react-icons/lu";
 import {
 	BiChevronDown,
@@ -55,13 +74,15 @@ import {
 	BiDownload,
 	BiSolidRightArrow,
 } from "react-icons/bi";
-
-
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { SlDiamond } from "react-icons/sl";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { PiShoppingCartSimple, PiCreditCardLight } from "react-icons/pi";
+import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { CgMenuRight } from "react-icons/cg";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiCheck } from "react-icons/fi";
-
 
 export {
 	FiCheck,
@@ -76,7 +97,15 @@ export {
 	BsArrowRight,
 	LuShieldCheck,
 	BiSolidRightArrow,
+	FaCircle,
+	IoMdHeartEmpty,
+	BsStarFill,
+	BsStarHalf,
+	FaTwitter,
+	FaFacebookF,
+	FaInstagram,
 };
+// ******************************************************ICONS END*************************************************
 
 // NAV
 export const navLinks = [
@@ -102,18 +131,8 @@ export const navLinks = [
 	},
 
 	{
-		id: "help",
-		title: "Help",
-		sublinks: [
-			{
-				id: "faq",
-				title: "FAQs",
-			},
-			{
-				id: "contact",
-				title: "Contact",
-			},
-		],
+		id: "contact",
+		title: "Contact",
 	},
 ];
 
@@ -192,7 +211,16 @@ export const mindfulDesign = {
 	title: "The New Way of Doing Business",
 	paragraph:
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae rhoncus ipsum. Nunc eleifend ultrices ligula eu pharetra. ",
-	downloadImg: [appleStorepng, playStorepng],
+	downloadImg: [
+		{
+			icon: appleStorepng,
+			link: "https://www.apple.com/app-store/",
+		},
+		{
+			icon: playStorepng,
+			link: "https://play.google.com/store/games?pli=1",
+		},
+	],
 	image: PSD021,
 };
 
@@ -372,7 +400,6 @@ export const testimonials = {
 export const achievements = {
 	text: "ACHIEVEMENTS",
 	title: "An Awesome Cash Wallet for You",
-	image: "",
 	rating: [
 		["4.7/5.0", "On iOS App Store"],
 		["4.8/5.0", "On Google Play"],
@@ -423,333 +450,407 @@ export const FAQSection = [
 	},
 ];
 
-export const blogPosts = [
-	{
-		id: 1,
-		title: "Ransomware Payments Were on the Declines!",
-		author: "John Doe",
-		category: "Payment",
-		postTags: ["Decline", "Payment", "Ransome"],
-		buttonText: "Read More",
-		image: blogImg2,
-		publicationDate: new Date("2023-06-25"),
-		content: [
-			{
-				heading1: [
-					{
-						text: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex. Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis nisl. Phasellus sit amet tellus eleifend, placerat massa vel, pharetra ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem commodo. Nullam interdum consequat venenatis. Fusce nec sagittis metus.",
-							"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet tortor vitae egestas. Pellentesque et sapien in tortor luctus porta. Pellentesque semper dapibus massa eget venenatis. Quisque tortor est, semper a sapien nec, interdum pretium odio. Phasellus nec ligula risus.",
-						],
-						list: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							"Cras nisl metus, tristique at dolor eu, finibus facilisis ex",
-							"Nullam suscipit, est in egestas cursus, maximus quam",
-						],
-					},
-				],
+export const articleSection = {
+	text: "BLOG NEWS",
+	title: "Articles From Maveli",
+	paragraph:
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,  leo.",
+};
 
-				heading2: [
-					{
-						heading: "Making digital transactions easy",
-						text: "Nullam vehicula justo nibh, consectetur pharetra ligula dictum ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec volutpat nibh eu risus tempus volutpat. Phasellus venenatis non sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend at id augue. Nullam volutpat justo eget justo finibus mattis. Nam lobortis, massa sit amet euismod fermentum, velit dolor viverra odio, vitae sagittis velit metus sit amet massa. Nullam nibh ante, pulvinar in dolor quis, ultricies maximus dolor.",
-						quote:
-							"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
-						text2:
-							"Suspendisse at augue vel odio fermentum fringilla eget et sapien. Quisque enim massa, elementum id enim sit amet, elementum tempus est. Sed felis dolor, varius et mauris at, aliquam sollicitudin elit. Curabitur non bibendum elit. In non tempor augue. Mauris aliquam porttitor justo, nec consectetur leo ornare vitae. Nunc lobortis maximus leo gravida tristique. Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed tortor.",
-					},
-				],
+export const footer = {
+	download: [appleStorepng, playStorepng],
 
-				heading3: [
-					{
-						heading: "The next big thing in the cash wallet industry",
-						p1: "Nulla ut nibh et elit dapibus ultrices sed nec risus. Nam in tellus nisl. Aenean tempor nulla felis, ut volutpat est auctor sit amet. Nam viverra, justo quis tempor tristique, sem sem tempus ligula, nec consequat nunc tellus at lorem. Duis pretium, nulla a faucibus maximus, enim odio pharetra arcu, sed pulvinar elit sem at odio. Phasellus urna sem, euismod a blandit et, convallis in nisi.",
-						p2: "Pellentesque lacus enim, malesuada vel est non, vulputate suscipit tortor. Donec finibus, neque sed sodales condimentum, arcu leo lobortis mauris, vitae tempor neque nisi sed justo. Duis consectetur posuere nulla non placerat.",
-					},
-				],
-
-				heading4: [
-					{
-						heading: "Hassle-free transactions made possible",
-						p1: "Etiam enim neque, feugiat ac eros eu, congue varius est. Vivamus mi est, tincidunt feugiat rutrum vitae, euismod quis nibh. Ut accumsan diam vitae lobortis lobortis. Donec non euismod ligula. Phasellus id ex quam. Vivamus et feugiat mauris. Nam efficitur fermentum odio ut viverra. Suspendisse ultrices vehicula sapien, vel porttitor nibh ultrices sit amet. Mauris orci justo, dictum eget tempus sed, laoreet sit amet purus. Pellentesque erat eros, consequat sed ante at, molestie egestas lorem. Quisque efficitur magna magna, at sagittis libero euismod vitae. Fusce lacinia tincidunt convallis.",
-						p2: "Aliquam et efficitur nibh, vel imperdiet turpis. Ut consectetur mi quis enim vehicula vestibulum. Pellentesque et sodales turpis. Donec eget iaculis dolor. Sed lacinia pretium justo sed bibendum.",
-					},
-				],
-			},
-		],
+	contact: {
+		heading: "Contact",
+		number: "+1(234) 567 890",
+		email: "example@mail.com",
 	},
+
+	address: {
+		heading: "Address",
+		ourAddress: "323 Valley Lane, Austin",
+		time: "07.00 AM - 19.00 PM",
+	},
+
+	explore: [
+		{
+			id: "",
+			title: "Home",
+		},
+		{
+			id: "about",
+			title: "About",
+		},
+		{
+			id: "product",
+			title: "Product",
+		},
+		{
+			id: "pricing",
+			title: "Pricing",
+		},
+		{
+			id: "blog",
+			title: "Blog",
+		},
+	],
+
+	support: [
+		{
+			id: "help-center",
+			title: "Help Center",
+		},
+		{
+			id: "private-policy",
+			title: "Private Policy",
+		},
+		{
+			id: "disclaimer",
+			title: "Disclaimer",
+		},
+		{
+			id: "faq",
+			title: "FAQ",
+		},
+		{
+			id: "contact",
+			title: "Contact",
+		},
+	],
+};
+
+// ******************************************ABOUT PAGE***********************************************
+export const ourValues = {
+	heading: "OUR VALUES",
+	title: "Workflow Is What We Do",
+	values: [
+		{
+			icon: IoMdHeartEmpty,
+			title: "Trusted Company",
+			paragraph:
+				"Pellentesque semper dapibus massa eget venenatis. Quisque tortor est.",
+			color: "bg-[#E7E8FE]",
+		},
+
+		{
+			icon: LiaPhoneVolumeSolid,
+			title: "Fast Support",
+			paragraph:
+				"Pellentesque semper dapibus massa eget venenatis. Quisque tortor est.",
+			color: "bg-[#F1FF9D]",
+		},
+
+		{
+			icon: PiShoppingCartSimple,
+			title: "Fast Process",
+			paragraph:
+				"Pellentesque semper dapibus massa eget venenatis. Quisque tortor est.",
+			color: "bg-[#FFF0D0]",
+		},
+
+		{
+			icon: SlDiamond,
+			title: "Easy to Use",
+			paragraph:
+				"Pellentesque semper dapibus massa eget venenatis. Quisque tortor est.",
+			color: "bg-[#DFF2C2]",
+		},
+
+		{
+			icon: HiOutlineDevicePhoneMobile,
+			title: "Take It Anywhere",
+			paragraph:
+				"Pellentesque semper dapibus massa eget venenatis. Quisque tortor est.",
+			color: "bg-[#FEE7FE]",
+		},
+
+		{
+			icon: PiCreditCardLight,
+			title: "Free Credits",
+			paragraph:
+				"Pellentesque semper dapibus massa eget venenatis. Quisque tortor est.",
+			color: "bg-[#E7F8FE]",
+		},
+	],
+};
+
+// ***************************************************TEAM***********************************************
+export const ourTeam = {
+	heading: "OUR TEAM",
+	title: "Meet The Professionals",
+	paragraph:
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,  leo.",
+	teamsInfo: [
+		{
+			id: "1",
+			image: teamMember1,
+			name: "Alan Houston",
+			position: "Company CEO",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+
+		{
+			id: "2",
+			image: teamMember2,
+			name: "Lenna Kings",
+			position: "Marketing",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+		{
+			id: "3",
+			image: teamMember3,
+			name: "Louis Thomson",
+			position: "Frontend Developer",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+		{
+			id: "4",
+			image: teamMember4,
+			name: "Tim Hallaway",
+			position: "Backend Developer",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+		{
+			id: "5",
+			image: teamMember5,
+			name: "Lenna Kings",
+			position: "Marketing",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+		{
+			id: "6",
+			image: teamMember6,
+			name: "Jeane Greg",
+			position: "Sales",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+		{
+			id: "7",
+			image: teamMember7,
+			name: "Petra Jimmy",
+			position: "Manager",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+		{
+			id: "8",
+			image: teamMember8,
+			name: "Jack Julian",
+			position: "Designer",
+			socials: [
+				{
+					icon: FaFacebookF,
+					name: "Facebook",
+					url: "https://facebook.com",
+				},
+				{ icon: FaTwitter, name: "Twitter", url: "https://twitter.com" },
+				{
+					icon: FaInstagram,
+					name: "Instagram",
+					url: "https://instagram.com",
+				},
+			],
+		},
+	],
+};
+
+// ourOffice
+export const ourOffice = {
+	heading: "OUR OFFICES",
+	title: "We’re Here, There and Everywhere",
+	address: [
+		{
+			image: officeImg1,
+			state: "Louisiana, USA",
+			address: "12587 Feeney Spurs, La Habra 36003",
+			url: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d19868.32496225223!2d-0.119554!3d51.503297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2sus!4v1689090077706!5m2!1sen!2sus",
+		},
+
+		{
+			image: officeImg2,
+			state: "New Mexico, USA",
+			address: "61822 Prairie, East Dessieborough 50516",
+			url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6769268.63174209!2d-111.31948617612052!3d34.061644920137354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87185043e79852a9%3A0x46bf6e1a63359eba!2sNew%20Mexico%2C%20USA!5e0!3m2!1sen!2sng!4v1689090586359!5m2!1sen!2sng",
+		},
+
+		{
+			image: officeImg3,
+			state: "Pennsylvania, USA",
+			address: "333 Wilkinson, New Alexandraberg 41041-45",
+			url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079162.2518274537!2d-80.24557555036031!3d41.090969284172665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882d80261e32e589%3A0xc24621475022b43d!2sPennsylvania%2C%20USA!5e0!3m2!1sen!2sng!4v1689090693643!5m2!1sen!2sng",
+		},
+	],
+};
+
+
+export const desktopModeData = {
+	heading: "DESKTOP MODE",
+	title: "Access Everything From Your Desktop",
+	paragraph:
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae rhoncus ipsum. Nunc eleifend ultrices ligula eu pharetra. Suspendisse at augue vel odio fermentum fringilla eget et sapien.",
+	buttonText: "Get Started",
+	image: dashBoardImg,
+};
+
+export const blogData = [
 	{
-		id: 2,
+		id: "1",
 		title: "Digital Payment Value Continues to Worldwide",
+		slug: "digital-payment-value-continues-to-worldwide",
+		preview:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar dapibus leo.",
 		author: "John Doe",
+		date: "February 2, 2023",
 		category: "Digital",
-		postTags: ["Money", "Strategy", "World"],
-		buttonText: "Read More",
-		image: aboutImg,
-		publicationDate: new Date("2023-06-25"),
-		content: [
-			{
-				heading1: [
-					{
-						text: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex. Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis nisl. Phasellus sit amet tellus eleifend, placerat massa vel, pharetra ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem commodo. Nullam interdum consequat venenatis. Fusce nec sagittis metus.",
-							"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet tortor vitae egestas. Pellentesque et sapien in tortor luctus porta. Pellentesque semper dapibus massa eget venenatis. Quisque tortor est, semper a sapien nec, interdum pretium odio. Phasellus nec ligula risus.",
-						],
-						list: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							"Cras nisl metus, tristique at dolor eu, finibus facilisis ex",
-							"Nullam suscipit, est in egestas cursus, maximus quam",
-						],
-					},
-				],
-
-				heading2: [
-					{
-						heading: "Making digital transactions easy",
-						text: "Nullam vehicula justo nibh, consectetur pharetra ligula dictum ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec volutpat nibh eu risus tempus volutpat. Phasellus venenatis non sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend at id augue. Nullam volutpat justo eget justo finibus mattis. Nam lobortis, massa sit amet euismod fermentum, velit dolor viverra odio, vitae sagittis velit metus sit amet massa. Nullam nibh ante, pulvinar in dolor quis, ultricies maximus dolor.",
-						quote:
-							"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
-						text2:
-							"Suspendisse at augue vel odio fermentum fringilla eget et sapien. Quisque enim massa, elementum id enim sit amet, elementum tempus est. Sed felis dolor, varius et mauris at, aliquam sollicitudin elit. Curabitur non bibendum elit. In non tempor augue. Mauris aliquam porttitor justo, nec consectetur leo ornare vitae. Nunc lobortis maximus leo gravida tristique. Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed tortor.",
-					},
-				],
-
-				heading3: [
-					{
-						heading: "The next big thing in the cash wallet industry",
-						p1: "Nulla ut nibh et elit dapibus ultrices sed nec risus. Nam in tellus nisl. Aenean tempor nulla felis, ut volutpat est auctor sit amet. Nam viverra, justo quis tempor tristique, sem sem tempus ligula, nec consequat nunc tellus at lorem. Duis pretium, nulla a faucibus maximus, enim odio pharetra arcu, sed pulvinar elit sem at odio. Phasellus urna sem, euismod a blandit et, convallis in nisi.",
-						p2: "Pellentesque lacus enim, malesuada vel est non, vulputate suscipit tortor. Donec finibus, neque sed sodales condimentum, arcu leo lobortis mauris, vitae tempor neque nisi sed justo. Duis consectetur posuere nulla non placerat.",
-					},
-				],
-
-				heading4: [
-					{
-						heading: "Hassle-free transactions made possible",
-						p1: "Etiam enim neque, feugiat ac eros eu, congue varius est. Vivamus mi est, tincidunt feugiat rutrum vitae, euismod quis nibh. Ut accumsan diam vitae lobortis lobortis. Donec non euismod ligula. Phasellus id ex quam. Vivamus et feugiat mauris. Nam efficitur fermentum odio ut viverra. Suspendisse ultrices vehicula sapien, vel porttitor nibh ultrices sit amet. Mauris orci justo, dictum eget tempus sed, laoreet sit amet purus. Pellentesque erat eros, consequat sed ante at, molestie egestas lorem. Quisque efficitur magna magna, at sagittis libero euismod vitae. Fusce lacinia tincidunt convallis.",
-						p2: "Aliquam et efficitur nibh, vel imperdiet turpis. Ut consectetur mi quis enim vehicula vestibulum. Pellentesque et sodales turpis. Donec eget iaculis dolor. Sed lacinia pretium justo sed bibendum.",
-					},
-				],
-			},
-		],
-	},
-
-	{
-		id: 3,
-		title: "Digital Payment Wallet Competition Heats Up",
-		author: "John Doe",
-		category: "Business",
-		postTags: ["App", "Competition", "Wallet"],
-		buttonText: "Read More",
-		image: blogImg3,
-		publicationDate: new Date("2023-06-25"),
-		content: [
-			{
-				heading1: [
-					{
-						text: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex. Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis nisl. Phasellus sit amet tellus eleifend, placerat massa vel, pharetra ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem commodo. Nullam interdum consequat venenatis. Fusce nec sagittis metus.",
-							"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet tortor vitae egestas. Pellentesque et sapien in tortor luctus porta. Pellentesque semper dapibus massa eget venenatis. Quisque tortor est, semper a sapien nec, interdum pretium odio. Phasellus nec ligula risus.",
-						],
-						list: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							"Cras nisl metus, tristique at dolor eu, finibus facilisis ex",
-							"Nullam suscipit, est in egestas cursus, maximus quam",
-						],
-					},
-				],
-
-				heading2: [
-					{
-						heading: "Making digital transactions easy",
-						text: "Nullam vehicula justo nibh, consectetur pharetra ligula dictum ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec volutpat nibh eu risus tempus volutpat. Phasellus venenatis non sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend at id augue. Nullam volutpat justo eget justo finibus mattis. Nam lobortis, massa sit amet euismod fermentum, velit dolor viverra odio, vitae sagittis velit metus sit amet massa. Nullam nibh ante, pulvinar in dolor quis, ultricies maximus dolor.",
-						quote:
-							"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
-						text2:
-							"Suspendisse at augue vel odio fermentum fringilla eget et sapien. Quisque enim massa, elementum id enim sit amet, elementum tempus est. Sed felis dolor, varius et mauris at, aliquam sollicitudin elit. Curabitur non bibendum elit. In non tempor augue. Mauris aliquam porttitor justo, nec consectetur leo ornare vitae. Nunc lobortis maximus leo gravida tristique. Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed tortor.",
-					},
-				],
-
-				heading3: [
-					{
-						heading: "The next big thing in the cash wallet industry",
-						p1: "Nulla ut nibh et elit dapibus ultrices sed nec risus. Nam in tellus nisl. Aenean tempor nulla felis, ut volutpat est auctor sit amet. Nam viverra, justo quis tempor tristique, sem sem tempus ligula, nec consequat nunc tellus at lorem. Duis pretium, nulla a faucibus maximus, enim odio pharetra arcu, sed pulvinar elit sem at odio. Phasellus urna sem, euismod a blandit et, convallis in nisi.",
-						p2: "Pellentesque lacus enim, malesuada vel est non, vulputate suscipit tortor. Donec finibus, neque sed sodales condimentum, arcu leo lobortis mauris, vitae tempor neque nisi sed justo. Duis consectetur posuere nulla non placerat.",
-					},
-				],
-
-				heading4: [
-					{
-						heading: "Hassle-free transactions made possible",
-						p1: "Etiam enim neque, feugiat ac eros eu, congue varius est. Vivamus mi est, tincidunt feugiat rutrum vitae, euismod quis nibh. Ut accumsan diam vitae lobortis lobortis. Donec non euismod ligula. Phasellus id ex quam. Vivamus et feugiat mauris. Nam efficitur fermentum odio ut viverra. Suspendisse ultrices vehicula sapien, vel porttitor nibh ultrices sit amet. Mauris orci justo, dictum eget tempus sed, laoreet sit amet purus. Pellentesque erat eros, consequat sed ante at, molestie egestas lorem. Quisque efficitur magna magna, at sagittis libero euismod vitae. Fusce lacinia tincidunt convallis.",
-						p2: "Aliquam et efficitur nibh, vel imperdiet turpis. Ut consectetur mi quis enim vehicula vestibulum. Pellentesque et sodales turpis. Donec eget iaculis dolor. Sed lacinia pretium justo sed bibendum.",
-					},
-				],
-			},
-		],
-	},
-
-	{
-		id: 4,
-		title: "Online Purchases Thrived During the Holidays",
-		author: "John Doe",
-		category: "Purchase",
-		postTags: ["Online", "Competition", "Wallet"],
-		buttonText: "Read More",
-		image: blogImg4,
-		publicationDate: new Date("2023-06-25"),
-		content: [
-			{
-				heading1: [
-					{
-						text: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex. Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis nisl. Phasellus sit amet tellus eleifend, placerat massa vel, pharetra ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem commodo. Nullam interdum consequat venenatis. Fusce nec sagittis metus.",
-							"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet tortor vitae egestas. Pellentesque et sapien in tortor luctus porta. Pellentesque semper dapibus massa eget venenatis. Quisque tortor est, semper a sapien nec, interdum pretium odio. Phasellus nec ligula risus.",
-						],
-						list: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							"Cras nisl metus, tristique at dolor eu, finibus facilisis ex",
-							"Nullam suscipit, est in egestas cursus, maximus quam",
-						],
-					},
-				],
-
-				heading2: [
-					{
-						heading: "Making digital transactions easy",
-						text: "Nullam vehicula justo nibh, consectetur pharetra ligula dictum ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec volutpat nibh eu risus tempus volutpat. Phasellus venenatis non sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend at id augue. Nullam volutpat justo eget justo finibus mattis. Nam lobortis, massa sit amet euismod fermentum, velit dolor viverra odio, vitae sagittis velit metus sit amet massa. Nullam nibh ante, pulvinar in dolor quis, ultricies maximus dolor.",
-						quote:
-							"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
-						text2:
-							"Suspendisse at augue vel odio fermentum fringilla eget et sapien. Quisque enim massa, elementum id enim sit amet, elementum tempus est. Sed felis dolor, varius et mauris at, aliquam sollicitudin elit. Curabitur non bibendum elit. In non tempor augue. Mauris aliquam porttitor justo, nec consectetur leo ornare vitae. Nunc lobortis maximus leo gravida tristique. Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed tortor.",
-					},
-				],
-
-				heading3: [
-					{
-						heading: "The next big thing in the cash wallet industry",
-						p1: "Nulla ut nibh et elit dapibus ultrices sed nec risus. Nam in tellus nisl. Aenean tempor nulla felis, ut volutpat est auctor sit amet. Nam viverra, justo quis tempor tristique, sem sem tempus ligula, nec consequat nunc tellus at lorem. Duis pretium, nulla a faucibus maximus, enim odio pharetra arcu, sed pulvinar elit sem at odio. Phasellus urna sem, euismod a blandit et, convallis in nisi.",
-						p2: "Pellentesque lacus enim, malesuada vel est non, vulputate suscipit tortor. Donec finibus, neque sed sodales condimentum, arcu leo lobortis mauris, vitae tempor neque nisi sed justo. Duis consectetur posuere nulla non placerat.",
-					},
-				],
-
-				heading4: [
-					{
-						heading: "Hassle-free transactions made possible",
-						p1: "Etiam enim neque, feugiat ac eros eu, congue varius est. Vivamus mi est, tincidunt feugiat rutrum vitae, euismod quis nibh. Ut accumsan diam vitae lobortis lobortis. Donec non euismod ligula. Phasellus id ex quam. Vivamus et feugiat mauris. Nam efficitur fermentum odio ut viverra. Suspendisse ultrices vehicula sapien, vel porttitor nibh ultrices sit amet. Mauris orci justo, dictum eget tempus sed, laoreet sit amet purus. Pellentesque erat eros, consequat sed ante at, molestie egestas lorem. Quisque efficitur magna magna, at sagittis libero euismod vitae. Fusce lacinia tincidunt convallis.",
-						p2: "Aliquam et efficitur nibh, vel imperdiet turpis. Ut consectetur mi quis enim vehicula vestibulum. Pellentesque et sodales turpis. Donec eget iaculis dolor. Sed lacinia pretium justo sed bibendum.",
-					},
-				],
-			},
-		],
-	},
-
-	{
-		id: 5,
-		title: "Twitter Payment Continue to Build Momentum",
-		author: "John Doe",
-		category: "Purchase",
-		postTags: ["Online", "Competition", "Wallet"],
-		buttonText: "Read More",
-		image: blogImg5,
-		publicationDate: new Date("2023-06-25"),
-		content: [
-			{
-				heading1: [
-					{
-						text: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex. Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis nisl. Phasellus sit amet tellus eleifend, placerat massa vel, pharetra ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem commodo. Nullam interdum consequat venenatis. Fusce nec sagittis metus.",
-							"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet tortor vitae egestas. Pellentesque et sapien in tortor luctus porta. Pellentesque semper dapibus massa eget venenatis. Quisque tortor est, semper a sapien nec, interdum pretium odio. Phasellus nec ligula risus.",
-						],
-						list: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							"Cras nisl metus, tristique at dolor eu, finibus facilisis ex",
-							"Nullam suscipit, est in egestas cursus, maximus quam",
-						],
-					},
-				],
-
-				heading2: [
-					{
-						heading: "Making digital transactions easy",
-						text: "Nullam vehicula justo nibh, consectetur pharetra ligula dictum ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec volutpat nibh eu risus tempus volutpat. Phasellus venenatis non sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend at id augue. Nullam volutpat justo eget justo finibus mattis. Nam lobortis, massa sit amet euismod fermentum, velit dolor viverra odio, vitae sagittis velit metus sit amet massa. Nullam nibh ante, pulvinar in dolor quis, ultricies maximus dolor.",
-						quote:
-							"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
-						text2:
-							"Suspendisse at augue vel odio fermentum fringilla eget et sapien. Quisque enim massa, elementum id enim sit amet, elementum tempus est. Sed felis dolor, varius et mauris at, aliquam sollicitudin elit. Curabitur non bibendum elit. In non tempor augue. Mauris aliquam porttitor justo, nec consectetur leo ornare vitae. Nunc lobortis maximus leo gravida tristique. Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed tortor.",
-					},
-				],
-
-				heading3: [
-					{
-						heading: "The next big thing in the cash wallet industry",
-						p1: "Nulla ut nibh et elit dapibus ultrices sed nec risus. Nam in tellus nisl. Aenean tempor nulla felis, ut volutpat est auctor sit amet. Nam viverra, justo quis tempor tristique, sem sem tempus ligula, nec consequat nunc tellus at lorem. Duis pretium, nulla a faucibus maximus, enim odio pharetra arcu, sed pulvinar elit sem at odio. Phasellus urna sem, euismod a blandit et, convallis in nisi.",
-						p2: "Pellentesque lacus enim, malesuada vel est non, vulputate suscipit tortor. Donec finibus, neque sed sodales condimentum, arcu leo lobortis mauris, vitae tempor neque nisi sed justo. Duis consectetur posuere nulla non placerat.",
-					},
-				],
-
-				heading4: [
-					{
-						heading: "Hassle-free transactions made possible",
-						p1: "Etiam enim neque, feugiat ac eros eu, congue varius est. Vivamus mi est, tincidunt feugiat rutrum vitae, euismod quis nibh. Ut accumsan diam vitae lobortis lobortis. Donec non euismod ligula. Phasellus id ex quam. Vivamus et feugiat mauris. Nam efficitur fermentum odio ut viverra. Suspendisse ultrices vehicula sapien, vel porttitor nibh ultrices sit amet. Mauris orci justo, dictum eget tempus sed, laoreet sit amet purus. Pellentesque erat eros, consequat sed ante at, molestie egestas lorem. Quisque efficitur magna magna, at sagittis libero euismod vitae. Fusce lacinia tincidunt convallis.",
-						p2: "Aliquam et efficitur nibh, vel imperdiet turpis. Ut consectetur mi quis enim vehicula vestibulum. Pellentesque et sodales turpis. Donec eget iaculis dolor. Sed lacinia pretium justo sed bibendum.",
-					},
-				],
-			},
-		],
-	},
-
-	{
-		id: 6,
-		title: "Is 2023 the Year of the Digital Payment Apps?",
-		author: "John Doe",
-		category: "Digital",
-		postTags: ["Digital", "Payment", "Wallet"],
-		buttonText: "Read More",
 		image: blogImg1,
-		publicationDate: new Date("2023-06-25"),
-		content: [
-			{
-				heading1: [
-					{
-						text: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex. Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis nisl. Phasellus sit amet tellus eleifend, placerat massa vel, pharetra ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem commodo. Nullam interdum consequat venenatis. Fusce nec sagittis metus.",
-							"Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque efficitur imperdiet tortor vitae egestas. Pellentesque et sapien in tortor luctus porta. Pellentesque semper dapibus massa eget venenatis. Quisque tortor est, semper a sapien nec, interdum pretium odio. Phasellus nec ligula risus.",
-						],
-						list: [
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-							"Cras nisl metus, tristique at dolor eu, finibus facilisis ex",
-							"Nullam suscipit, est in egestas cursus, maximus quam",
-						],
-					},
-				],
+		tags: ["Technology", "Money"],
+	},
 
-				heading2: [
-					{
-						heading: "Making digital transactions easy",
-						text: "Nullam vehicula justo nibh, consectetur pharetra ligula dictum ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec volutpat nibh eu risus tempus volutpat. Phasellus venenatis non sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend at id augue. Nullam volutpat justo eget justo finibus mattis. Nam lobortis, massa sit amet euismod fermentum, velit dolor viverra odio, vitae sagittis velit metus sit amet massa. Nullam nibh ante, pulvinar in dolor quis, ultricies maximus dolor.",
-						quote:
-							"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis",
-						text2:
-							"Suspendisse at augue vel odio fermentum fringilla eget et sapien. Quisque enim massa, elementum id enim sit amet, elementum tempus est. Sed felis dolor, varius et mauris at, aliquam sollicitudin elit. Curabitur non bibendum elit. In non tempor augue. Mauris aliquam porttitor justo, nec consectetur leo ornare vitae. Nunc lobortis maximus leo gravida tristique. Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed tortor.",
-					},
-				],
+	{
+		id: "2",
+		title: "Is 2023 the Year of the Digital Payment Apps?",
+		slug: "is-2023-the-year-of-the-digital-payment-apps",
+		preview:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar dapibus leo.",
+		author: "John Doe",
+		date: "February 2, 2023",
+		category: "Payment",
+		image: blogImg3,
+		tags: ["App", "Payment"],
+	},
 
-				heading3: [
-					{
-						heading: "The next big thing in the cash wallet industry",
-						p1: "Nulla ut nibh et elit dapibus ultrices sed nec risus. Nam in tellus nisl. Aenean tempor nulla felis, ut volutpat est auctor sit amet. Nam viverra, justo quis tempor tristique, sem sem tempus ligula, nec consequat nunc tellus at lorem. Duis pretium, nulla a faucibus maximus, enim odio pharetra arcu, sed pulvinar elit sem at odio. Phasellus urna sem, euismod a blandit et, convallis in nisi.",
-						p2: "Pellentesque lacus enim, malesuada vel est non, vulputate suscipit tortor. Donec finibus, neque sed sodales condimentum, arcu leo lobortis mauris, vitae tempor neque nisi sed justo. Duis consectetur posuere nulla non placerat.",
-					},
-				],
+	{
+		id: "3",
+		title: "Digital Payment Wallet Competition Heats Up",
+		slug: "digital-payment-wallet-competition-heats-up",
+		preview:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar dapibus leo.",
+		author: "John Doe",
+		date: "February 2, 2023",
+		category: "Digital",
+		image: blogImg2,
+		tags: ["Technology", "Payment"],
+	},
 
-				heading4: [
-					{
-						heading: "Hassle-free transactions made possible",
-						p1: "Etiam enim neque, feugiat ac eros eu, congue varius est. Vivamus mi est, tincidunt feugiat rutrum vitae, euismod quis nibh. Ut accumsan diam vitae lobortis lobortis. Donec non euismod ligula. Phasellus id ex quam. Vivamus et feugiat mauris. Nam efficitur fermentum odio ut viverra. Suspendisse ultrices vehicula sapien, vel porttitor nibh ultrices sit amet. Mauris orci justo, dictum eget tempus sed, laoreet sit amet purus. Pellentesque erat eros, consequat sed ante at, molestie egestas lorem. Quisque efficitur magna magna, at sagittis libero euismod vitae. Fusce lacinia tincidunt convallis.",
-						p2: "Aliquam et efficitur nibh, vel imperdiet turpis. Ut consectetur mi quis enim vehicula vestibulum. Pellentesque et sodales turpis. Donec eget iaculis dolor. Sed lacinia pretium justo sed bibendum.",
-					},
-				],
-			},
-		],
+	{
+		id: "4",
+		title: "Ransomware Payments Were on the Declines!",
+		slug: "ransomware-payment-were-on-the-declines",
+		preview:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar dapibus leo.",
+		author: "John Doe",
+		date: "February 2, 2023",
+		category: "Payment",
+		image: blogImg4,
+		tags: ["Payment", "Technology"],
+	},
+
+	{
+		id: "5",
+		title: "Online Purchases Thrived During the Holidays",
+		slug: "online-purchases-thrived-during-the-holidays",
+		preview:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar dapibus leo.",
+		author: "John Doe",
+		date: "February 2, 2023",
+		category: "Business",
+		image: blogImg5,
+		tags: ["Purchase", "Money"],
+	},
+
+	{
+		id: "6",
+		title: "Twitter Payment Continue to Build Momentum",
+		slug: "twitter-payment-continue-to-build-momentum",
+		preview:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec mattis, pulvinar dapibus leo.",
+		author: "John Doe",
+		date: "February 2, 2023",
+		category: "Digital",
+		image: aboutImg,
+		tags: ["Technology", "Payment"],
 	},
 ];

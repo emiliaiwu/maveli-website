@@ -1,4 +1,3 @@
-
 import NavItem from "./NavItem";
 import { navLinks } from "../../constants";
 
@@ -7,10 +6,7 @@ const Navbar = () => {
 		<nav className='hidden md:flex'>
 			<ul className='flex list-none'>
 				{navLinks.map((nav) => (
-					<NavItem
-						key={nav.id}
-						nav={nav}
-					/>
+					<NavItem key={nav.id} nav={nav} />
 				))}
 			</ul>
 		</nav>

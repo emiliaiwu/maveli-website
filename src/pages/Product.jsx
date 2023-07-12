@@ -1,9 +1,16 @@
-
+import { DeskTopMode, Features, HowItWorks, MindfulDesign, PageHeader, Testimonials } from "../components";
 
 const Product = () => {
-  return (
-    <div>Product</div>
-  )
-}
+	return (
+		<>
+			<PageHeader title={"Our Product"} location={"Product"} />
+      <MindfulDesign />
+      <DeskTopMode/>
+      <Features />
+      <Testimonials />
+      <HowItWorks/>
+		</>
+	);
+};
 
-export default Product
+export default Product;

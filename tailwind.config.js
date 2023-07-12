@@ -10,6 +10,7 @@ export default {
 				tertiary: "#F1FF9F",
 				headingColor: "rgba(0, 0, 0, 0.4)",
 				paragraph: "rgb(122, 122, 122)",
+				paragraph2: "rgba(255, 255, 255, 0.83)",
 			},
 			fontFamily: {
 				grotesk: ["Space Grotesk", "sans-serif"],
@@ -28,6 +29,7 @@ export default {
 			xs: "480px",
 			ss: "620px",
 			sm: "767px",
+			mdd: "1024px",
 			md: "1025px",
 			lg: "1400px",
 			xl: "1700px",

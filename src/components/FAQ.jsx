@@ -1,16 +1,19 @@
 import { iPhone5 } from "../assets";
 import { faqs } from "../constants";
+import { styles } from "../style";
 import Accordion from "./Accordion";
 import { H2Header, Heading } from "./Texts";
 
-const FAQ = () => {
+const Faq = () => {
 	const { text, title, questions } = faqs;
 
 	return (
-		<section className='flex justify-center items-center'>
-			<div className='flex flex-col justify-between md:flex-row-reverse gap-10 max-w-[1240px] md:px-8'>
-				<div className='w-full md:w-[50%] md:mt-[50px] mb-10 md:mb-0'>
-					<div className='mb-10 flex shrink basis-auto flex-col items-center gap-8 text-center'>
+		<section>
+			<div
+				className={`${styles.boxWidth} mx-auto flex flex-col justify-between gap-10 md:flex-row-reverse`}
+			>
+				<div className='mb-10 w-full md:mb-0 md:mt-[50px] md:w-[50%]'>
+					<div className='mb-10 flex flex-col items-center gap-8 text-center'>
 						<Heading text={text} />
 						<div className=' '>
 							<H2Header text={title} />
@@ -34,4 +37,4 @@ const FAQ = () => {
 	);
 };
 
-export default FAQ;
+export default Faq;
