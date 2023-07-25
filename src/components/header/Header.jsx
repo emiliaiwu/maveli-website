@@ -20,8 +20,7 @@ const Header = () => {
 				 ${styles.boxWidth}`}
 			>
 				<Logo
-					height='h-[1.8rem]'
-					width='h-[1.8rem]'
+					num={28}
 					textSize='text-xl sm:text-2xl'
 				/>
 				<Navbar />

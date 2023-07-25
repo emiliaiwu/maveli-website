@@ -14,8 +14,8 @@ const Reveal = ({ children, className }) => {
 
 			transition: {
 				ease: "easeOut",
-				duration: 0.8,
-				delay: 0.3,
+				duration: 0.6,
+				delay: 0.2,
 			},
 		},
 	};

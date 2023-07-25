@@ -15,11 +15,7 @@ const Footer = () => {
 					<div className='mb-10 flex w-full flex-col justify-between gap-14 md:flex-row'>
 						{/* Logo and socials */}
 						<div className='flex w-full flex-col items-center gap-6 md:w-[40%] md:items-start'>
-							<Logo
-								height={"h-[2.5rem]"}
-								width='h-[2.5rem]'
-								textSize={"text-3xl sm:text-4xl"}
-							/>
+							<Logo num={38} textSize={"text-3xl sm:text-4xl"} />
 							<p className='font-DMSans text-sm leading-[25px] text-paragraph2'>
 								Lorem ipsum dolor sit amet, <br /> consec tetur adipiscing elit.
 							</p>
@@ -93,17 +89,21 @@ const Footer = () => {
 							Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit. Ut
 							elit tellus, luctus nec.
 						</p>
-						<div className='flex flex-wrap items-center justify-center gap-4'>
-							<img
-								src={download[0]}
-								alt='Apple Store'
-								className='ease h-auto w-[140px] cursor-pointer rounded-[5px] border-[0.6px] border-white duration-300 hover:translate-y-[-0.5rem] md:w-[160px]'
-							/>
-							<img
-								src={download[1]}
-								alt='Play Store'
-								className='ease h-auto w-[140px] cursor-pointer rounded-[5px] border-[0.6px] border-white duration-300 hover:translate-y-[-0.5rem]   md:w-[160px]'
-							/>
+						<div className='flex w-full flex-wrap items-center justify-center gap-4'>
+							<Link to={"/"}>
+								<img
+									src={download[0]}
+									alt='Apple Store'
+									className='ease h-auto w-[140px] cursor-pointer rounded-[5px] border-[0.6px] border-white duration-300 hover:translate-y-[-0.5rem] md:w-[160px]'
+								/>
+							</Link>
+							<Link to={"/"}>
+								<img
+									src={download[1]}
+									alt='Play Store'
+									className='ease h-auto w-[140px] cursor-pointer rounded-[5px] border-[0.6px] border-white duration-300 hover:translate-y-[-0.5rem]   md:w-[160px]'
+								/>
+							</Link>
 						</div>
 					</div>
 				</div>

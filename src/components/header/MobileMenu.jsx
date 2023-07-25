@@ -11,11 +11,7 @@ const MobileMenu = ({ isOpen, setIsOpen }) => {
 					: " left-[-100%] duration-300 ease-in-out"
 			}`}
 		>
-			<Logo
-				height='h-[1.8rem]'
-				width='h-[1.8rem]'
-				textSize='text-xl sm:text-2xl'
-			/>
+			<Logo num={28} textSize='text-xl sm:text-2xl' />
 			<ul className='mt-12 flex flex-1 flex-col gap-4'>
 				{navLinks.map((nav) => (
 					<MobileMenuItem
