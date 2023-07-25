@@ -67,6 +67,8 @@ const Hero = () => {
 								<img
 									loading='lazy'
 									src={heroImage}
+									width="700"
+									height="1024"
 									className='inline-block aspect-auto h-auto w-[70%] max-w-[704px] object-contain sm:w-[80%]'
 								/>
 							</div>
