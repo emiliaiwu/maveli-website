@@ -1,29 +1,27 @@
-import errorImage from "../assets/errorimage.jpg";
+import image404 from "../assets/404_Asset-7.png"
+import { Heading, H2Header, InfoTextCenter } from "../components/Texts";
 import { Button } from "../components";
 
 const Page404 = () => {
 	return (
-		<section className="flex justify-center items-center">
-			<div className='flex flex-col items-center justify-center gap-4 mdd:flex-row md:max-w-[1240px]'>
-				<div className='w-full mdd:w-[60%]'>
-					<img
-						src={errorImage}
-						alt='404 image'
-						className='w-full object-cover'
+		<section>
+			<div className='mx-auto min-h-[73vh] max-w-[1000px]'>
+				<div className='max-w-[500px] flex flex-col items-center justify-center gap-5 text-center mx-auto'>
+					<Heading text={"ERROR PAGE"} />
+					<div className='max-w-[400px]'>
+						<img src={image404} alt='error image' className='w-full' />
+					</div>
+					<H2Header text={"Oops, page not found!"} />
+					<InfoTextCenter
+						text={
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,  leo."
+						}
 					/>
-				</div>
-				<div className='flex w-full flex-col items-center justify-center gap-6 px-4 text-center mdd:w-[40%]'>
-					<h2 className='font-grotesk text-4xl md:text-[45px] font-bold text-black leading-[50px]'>
-						Oh no! the <br/> page... is gone!
-					</h2>
-					<p className='font-DMSans text-base text-paragraph mb-4 leading-7'>
-						Sorry, this page does not exist. <br/> Please go back to homepage
-					</p>
 					<Button
-						link={"/"}
-						bgColor={"bg-black"}
+						text='Back to Homepage'
 						textColor={"text-white"}
-						text={"Home"}
+						bgColor={"bg-black"}
+						link={"/"}
 					/>
 				</div>
 			</div>

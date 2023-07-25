@@ -1,10 +1,12 @@
-import { OfficeAddress, PageHeader } from "../components"
+import { GetInTouch, OfficeAddress, PageHeader, SendMessage } from "../components"
 
 
 const Contact = () => {
   return (
     <>
-      <PageHeader title={"Our Contact"} location={"Contact"}/>
+      <PageHeader title={"Our Contact"} location={"Contact"} />
+      <GetInTouch />
+      <SendMessage/>
       <OfficeAddress/>
     </>
   )

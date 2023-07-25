@@ -4,14 +4,11 @@ import {
 	FaCircle,
 	BsStarFill,
 	BsStarHalf,
-	FaFacebookF,
-	FaInstagram,
-	FaTwitter,
+	RiDoubleQuotesR,
 } from "../constants";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { styles } from "../style";
-import { collage2 } from "../assets";
 
 // AboutBox
 export function AboutBox({
@@ -178,11 +175,15 @@ export function TestimonialsBox({ image, clientName, occupation, message }) {
 export function ArticleBox({ link, id, title, date, category, image }) {
 	return (
 		<div className='w-full'>
-			<div className='w-full overflow-hidden rounded-[8px]  border-[0.6px] border-black bg-white shadow-box'>
-				<div className='w-full'>
-					<img src={image} alt='blogpost image' className='w-full' />
+			<div className='group h-full w-full  overflow-hidden rounded-[8px] border-[0.6px] border-black bg-white shadow-box'>
+				<div className='h-1/2 w-full overflow-hidden'>
+					<img
+						src={image}
+						alt='blogpost image'
+						className='ease h-full w-full object-contain duration-200 group-hover:scale-[1.1]'
+					/>
 				</div>
-				<div className='flex flex-col items-start justify-between gap-5 p-[25px]'>
+				<div className='flex h-1/2 flex-col items-start justify-between gap-5 p-[25px]'>
 					<div className='flex items-center justify-start gap-3 font-grotesk text-sm font-semibold text-paragraph mdd:text-[15px]'>
 						<span>{date}</span>
 						<span>
@@ -286,7 +287,7 @@ export function TeamsBox({
 					loading='lazy'
 				/>
 
-				<div className='ease absolute bottom-0 left-0 right-0 flex h-0 items-center justify-center bg-black bg-opacity-80 opacity-0 duration-300 group-hover:h-full group-hover:opacity-100'>
+				<div className='ease absolute bottom-0 left-0 right-0 flex h-0 items-center justify-center bg-black bg-opacity-80 opacity-0 duration-500 group-hover:h-full group-hover:opacity-100'>
 					<div className='flex items-center justify-center gap-2'>
 						{socials.map((social) => (
 							<Link
@@ -318,7 +319,7 @@ export function TeamsBox({
 export function OfficeBox({ image, stateName, address, showMap, url }) {
 	return (
 		<div className='w-full'>
-			<div className='border-rounded w-full overflow-hidden shadow-box mb-7'>
+			<div className='border-rounded mb-7 w-full overflow-hidden shadow-box'>
 				<div className='w-full'>
 					<img
 						src={image}
@@ -330,18 +331,74 @@ export function OfficeBox({ image, stateName, address, showMap, url }) {
 			</div>
 
 			<div>
-				<h4 className='font-grotesk text-lg font-[500] text-black sm:text-[19px] md:text-[21px] mb-2'>
+				<h4 className='mb-2 font-grotesk text-lg font-[500] text-black sm:text-[19px] md:text-[21px]'>
 					{stateName}
 				</h4>
 				<p className='font-DMSans text-[14.5px] text-paragraph md:text-[15px] '>
 					{address}
 				</p>
-				<button className='font-grotesk text-[15px] font-[500] text-black mt-5 hover:opacity-50 duration-200 ease cursor-pointer' onClick={() => showMap(url)}>
+				<button
+					className='ease mt-5 cursor-pointer font-grotesk text-[15px] font-[500] text-black duration-200 hover:opacity-50'
+					onClick={() => showMap(url)}
+				>
 					Visit Office{" "}
 					<span>
-						<BsArrowRight className='ml-1 inline-block' />{" "}
+						<BsArrowRight className='ml-1 inline-block' />
 					</span>
 				</button>
+			</div>
+		</div>
+	);
+}
+
+// GETINTOUCH BOX
+
+export function GetInTouchBox({
+	title,
+	info1,
+	info2,
+	iconBgColor,
+	iconComponent,
+}) {
+	return (
+		<div className='mx-auto flex w-full'>
+			<div className='border-rounded w-full bg-white py-10 shadow-box'>
+				<div className={`${styles.flexCenter} flex-col gap-5`}>
+					<div
+						className={`${iconBgColor} h-[60px] w-[60px] rounded-full ${styles.flexCenter}`}
+					>
+						{iconComponent}
+					</div>
+					<h3 className='font-grotesk text-2xl font-[500] text-black'>
+						{title}
+					</h3>
+					<div>
+						<p className='px-6 text-center font-DMSans text-sm leading-[26px] text-paragraph mdd:text-[15px]'>
+							{info1} <br /> {info2}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+// Quote Box
+
+export function QuoteBox({ quote }) {
+	return (
+		<div className='w-full'>
+			<div className=' border-rounded my-[30px] bg-primary px-[30px] pb-[50px] pt-[45px] shadow-box sm:mx-[50px] sm:p-[50px] md:mx-[120px]'>
+				<div className='flex flex-col items-center justify-center gap-4  sm:flex-row sm:gap-10'>
+					<div>
+						<RiDoubleQuotesR size={65} className='text-black opacity-[50%]' />
+					</div>
+					<div>
+						<p className='text-center font-grotesk text-base font-[500] leading-[30px] text-black sm:text-left sm:text-[19px] md:text-[21px]'>
+							{quote}
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

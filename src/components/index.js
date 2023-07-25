@@ -24,6 +24,8 @@ import Socials from "./Socials";
 import SingleBlogpost from "./SingleBlogpost";
 import Articles from "./Articles";
 import BlogpostsSection from "./BlogpostsSection";
+import GetInTouch from "./GetInTouch";
+import SendMessage from "./SendMessage";
 
 export {
 	Footer,
@@ -52,4 +54,6 @@ export {
 	SingleBlogpost,
 	Articles,
 	BlogpostsSection,
+	GetInTouch,
+	SendMessage
 };

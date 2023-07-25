@@ -1,4 +1,5 @@
 import { styles } from "../style";
+import Reveal from "./animation/Reveal";
 
 const Stats = () => {
 	const StatsData = [

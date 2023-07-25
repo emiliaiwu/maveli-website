@@ -3,6 +3,7 @@ import { faqs } from "../constants";
 import { styles } from "../style";
 import Accordion from "./Accordion";
 import { H2Header, Heading } from "./Texts";
+import Reveal from "./animation/Reveal";
 
 const Faq = () => {
 	const { text, title, questions } = faqs;
@@ -14,12 +15,18 @@ const Faq = () => {
 			>
 				<div className='mb-10 w-full md:mb-0 md:mt-[50px] md:w-[50%]'>
 					<div className='mb-10 flex flex-col items-center gap-8 text-center'>
-						<Heading text={text} />
+						<Reveal>
+							<Heading text={text} />
+						</Reveal>
 						<div className=' '>
-							<H2Header text={title} />
+							<Reveal>
+								<H2Header text={title} />
+							</Reveal>
 						</div>
 					</div>
-					<Accordion faq={questions} />
+					<Reveal>
+						<Accordion faq={questions} />
+					</Reveal>
 				</div>
 
 				{/* image */}
@@ -27,7 +34,9 @@ const Faq = () => {
 					<div className='my-[30px] w-full rounded-[8px] border-[0.6px] border-black bg-tertiary px-8 md:my-[50px] '>
 						<div className='w-full'>
 							<div className='my-[-30px] flex w-full items-center justify-center md:my-[-50px]'>
-								<img src={iPhone5} className=' w-[70%] ' />
+								<Reveal>
+									<img src={iPhone5} className=' w-[70%] ' />
+								</Reveal>
 							</div>
 						</div>
 					</div>

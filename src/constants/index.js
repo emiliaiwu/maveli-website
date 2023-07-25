@@ -1,7 +1,5 @@
 // Images
 import {
-	iPhone2,
-	iPhone3,
 	iPhone5,
 	heroImg,
 	aboutImg,
@@ -43,7 +41,7 @@ import {
 	officeImg1,
 	officeImg2,
 	officeImg3,
-	dashBoardImg
+	dashBoardImg,
 } from "../assets";
 
 // images
@@ -74,8 +72,10 @@ import {
 	BiDownload,
 	BiSolidRightArrow,
 } from "react-icons/bi";
+import {RiDoubleQuotesR} from "react-icons/ri"
+import { GoMail } from "react-icons/go";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
-import { SlDiamond } from "react-icons/sl";
+import { SlDiamond, SlLocationPin } from "react-icons/sl";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { PiShoppingCartSimple, PiCreditCardLight } from "react-icons/pi";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
@@ -104,6 +104,7 @@ export {
 	FaTwitter,
 	FaFacebookF,
 	FaInstagram,
+	RiDoubleQuotesR,
 };
 // ******************************************************ICONS END*************************************************
 
@@ -765,7 +766,6 @@ export const ourOffice = {
 	],
 };
 
-
 export const desktopModeData = {
 	heading: "DESKTOP MODE",
 	title: "Access Everything From Your Desktop",
@@ -775,6 +775,7 @@ export const desktopModeData = {
 	image: dashBoardImg,
 };
 
+// *************************************************BLOG************************************************************
 export const blogData = [
 	{
 		id: "1",
@@ -787,6 +788,8 @@ export const blogData = [
 		category: "Digital",
 		image: blogImg1,
 		tags: ["Technology", "Money"],
+		quote:
+			"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis ",
 	},
 
 	{
@@ -800,6 +803,8 @@ export const blogData = [
 		category: "Payment",
 		image: blogImg3,
 		tags: ["App", "Payment"],
+		quote:
+			"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis ",
 	},
 
 	{
@@ -813,6 +818,8 @@ export const blogData = [
 		category: "Digital",
 		image: blogImg2,
 		tags: ["Technology", "Payment"],
+		quote:
+			"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis ",
 	},
 
 	{
@@ -826,6 +833,8 @@ export const blogData = [
 		category: "Payment",
 		image: blogImg4,
 		tags: ["Payment", "Technology"],
+		quote:
+			"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis ",
 	},
 
 	{
@@ -839,6 +848,8 @@ export const blogData = [
 		category: "Business",
 		image: blogImg5,
 		tags: ["Purchase", "Money"],
+		quote:
+			"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis ",
 	},
 
 	{
@@ -852,5 +863,43 @@ export const blogData = [
 		category: "Digital",
 		image: aboutImg,
 		tags: ["Technology", "Payment"],
+		quote:
+			"The next big thing in digital money transfer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis ",
 	},
 ];
+
+// ***********************************************************GET IN TOUCH****************************************************
+export const getInTouchData = {
+	heading: "Our Contact",
+	title: "Get In Touch",
+	cards: [
+		{
+			icon: SlLocationPin,
+			color: "bg-[#FEE7FE]",
+			title: "The Office",
+			Info: ["627 Hane Harbors, Dearborn", "Maine USA"],
+		},
+
+		{
+			icon: LiaPhoneVolumeSolid,
+			color: "bg-[#E7E8FE]",
+			title: "Phones",
+			Info: ["+1 (234) 567 890", "+0 (987) 654 321"],
+		},
+
+		{
+			icon: GoMail,
+			color: "bg-[#F1FF9D]",
+			title: "Emails",
+			Info: ["raveli@mails.com", "example@mail.com"],
+		},
+	],
+};
+
+// ***********************************MESSAGE DATA**********************************
+export const sendMessageData = {
+	heading: "SEND A MESSAGE",
+	title: "Let's Talk About Something",
+	paragraph:
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,  leo.",
+};

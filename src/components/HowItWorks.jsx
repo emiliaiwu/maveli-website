@@ -4,6 +4,7 @@ import { H2Header, Heading, InfoTextCenter } from "./Texts";
 import Button from "./Button";
 import Video from "./Video";
 import { styles } from "../style";
+import Reveal from "./animation/Reveal";
 
 const HowItWorks = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -24,15 +25,22 @@ const HowItWorks = () => {
 				className={`mx-auto flex w-full flex-col items-stretch overflow-hidden rounded-[8px] rounded-b-[8px] border border-black sm:flex-row-reverse ${styles.boxWidth} relative`}
 			>
 				<div className='flex flex-col items-center gap-4 bg-tertiary px-[30px] py-[50px] text-center sm:w-[50%] sm:items-start sm:px-[50px] sm:py-[70px] sm:text-left md:px-[70px] md:py-[140px]'>
-					<Heading text={text} />
-					<H2Header text={title} />
-					<InfoTextCenter text={paragraph} />
+					<Reveal>
+						<Heading text={text} />
+					</Reveal>
+					<Reveal>
+						<H2Header text={title} />
+					</Reveal>
+					<Reveal>
+						<InfoTextCenter text={paragraph} />
+					</Reveal>
+					<Reveal>
 					<Button
 						text={buttonText}
 						bgColor={"bg-black"}
 						textColor={"text-white"}
 						link={"/"}
-					/>
+					/></Reveal>
 				</div>
 				<div className='howitworks-bg-img flex w-full items-center justify-center border-t border-black sm:w-[50%] sm:border-r  sm:border-t-0 '>
 					<div className='py-[120px]'>

@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom";
 import { blogData } from "../constants";
 import { styles } from "../style";
 import { Socials } from ".";
+import { QuoteBox } from "./Box";
+import Reveal from "./animation/Reveal";
 
 const SingleBlogpost = () => {
 	const { slug } = useParams();
@@ -30,84 +32,94 @@ const SingleBlogpost = () => {
 					</p>
 				</div>
 				<div className='mx-auto flex w-full max-w-[1000px] flex-col gap-5 py-[70px] md:py-[100px]'>
-					<div
-						className={`${styles.flexCenter} border-rounded mb-2 overflow-hidden`}
-					>
-						<img
-							src={blogpost.image}
-							alt='blogpost image'
-							loading='lazy'
-							className='h-full w-full object-cover'
-						/>
-					</div>
+					<Reveal>
+						<div
+							className={`${styles.flexCenter} border-rounded mb-2 overflow-hidden`}
+						>
+							<img
+								src={blogpost.image}
+								alt='blogpost image'
+								loading='lazy'
+								className='h-full w-full object-cover'
+							/>
+						</div>
+					</Reveal>
 					<div className='font-grotesk text-[15px] font-[600] text-black'>
 						<time className='pr-[15px]'>{blogpost.date}</time>
 						<span className='border-l-2 border-paragraph border-opacity-30 pl-[15px]'>
 							{blogpost.category}
 						</span>
 					</div>
-					<div className='blog-paragraph'>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-							maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex.
-							Curabitur varius semper turpis eu ullamcorper. Sed pharetra libero
-							nec lorem rutrum interdum. Aliquam egestas ligula ex, at lobortis
-							neque efficitur in. Fusce sit amet ullamcorper ipsum. Vivamus
-							mollis efficitur velit vel blandit. Phasellus ut mollis nisl.
-							Phasellus sit amet tellus eleifend, placerat massa vel, pharetra
-							ante. Vivamus bibendum tortor ut massa finibus, ac venenatis lorem
-							commodo. Nullam interdum consequat venenatis. Fusce nec sagittis
-							metus.
-						</p>
-						<p>
-							Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque
-							nisi, malesuada quis sollicitudin a, eleifend quis turpis. Quisque
-							efficitur imperdiet tortor vitae egestas. Pellentesque et sapien
-							in tortor luctus porta. Pellentesque semper dapibus massa eget
-							venenatis. Quisque tortor est, semper a sapien nec, interdum
-							pretium odio. Phasellus nec ligula risus.
-						</p>
-						<ul>
-							<li>
-								<span className='marker-disc'></span>Lorem ipsum dolor sit amet,
-								consectetur adipiscing elit.
-							</li>
-							<li>
-								<span className='marker-disc'></span>
-								Cras nisl metus, tristique at dolor eu, finibus facilisis ex
-							</li>
-							<li>
-								<span className='marker-disc'></span>Nullam suscipit, est in
-								egestas cursus, maximus quam
-							</li>
-						</ul>
-						<div className='my-8'>
-							<h2 className='sm:[30px] mdd:[40px] text-[25px]'>
-								Making digital transactions easy
-							</h2>
+					<div>
+						<div className='blog-paragraph'>
 							<p>
-								Nullam vehicula justo nibh, consectetur pharetra ligula dictum
-								ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec
-								volutpat nibh eu risus tempus volutpat. Phasellus venenatis non
-								sem vel auctor. Quisque a sapien vel nulla vestibulum eleifend
-								at id augue. Nullam volutpat justo eget justo finibus mattis.
-								Nam lobortis, massa sit amet euismod fermentum, velit dolor
-								viverra odio, vitae sagittis velit metus sit amet massa. Nullam
-								nibh ante, pulvinar in dolor quis, ultricies maximus dolor.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+								maximus nunc eu odio pulvinar fringilla. Vivamus vitae odio ex.
+								Curabitur varius semper turpis eu ullamcorper. Sed pharetra
+								libero nec lorem rutrum interdum. Aliquam egestas ligula ex, at
+								lobortis neque efficitur in. Fusce sit amet ullamcorper ipsum.
+								Vivamus mollis efficitur velit vel blandit. Phasellus ut mollis
+								nisl. Phasellus sit amet tellus eleifend, placerat massa vel,
+								pharetra ante. Vivamus bibendum tortor ut massa finibus, ac
+								venenatis lorem commodo. Nullam interdum consequat venenatis.
+								Fusce nec sagittis metus.
 							</p>
-							{/* <Quote /> */}
 							<p>
-								Suspendisse at augue vel odio fermentum fringilla eget et
-								sapien. Quisque enim massa, elementum id enim sit amet,
-								elementum tempus est. Sed felis dolor, varius et mauris at,
-								aliquam sollicitudin elit. Curabitur non bibendum elit. In non
-								tempor augue. Mauris aliquam porttitor justo, nec consectetur
-								leo ornare vitae. Nunc lobortis maximus leo gravida tristique.
-								Vestibulum vitae elit sit amet tortor suscipit facilisis ac sed
-								tortor.
+								Fusce hendrerit quam eget justo lobortis commodo. Aliquam neque
+								nisi, malesuada quis sollicitudin a, eleifend quis turpis.
+								Quisque efficitur imperdiet tortor vitae egestas. Pellentesque
+								et sapien in tortor luctus porta. Pellentesque semper dapibus
+								massa eget venenatis. Quisque tortor est, semper a sapien nec,
+								interdum pretium odio. Phasellus nec ligula risus.
 							</p>
+							<ul>
+								<li>
+									<span className='marker-disc'></span>Lorem ipsum dolor sit
+									amet, consectetur adipiscing elit.
+								</li>
+								<li>
+									<span className='marker-disc'></span>
+									Cras nisl metus, tristique at dolor eu, finibus facilisis ex
+								</li>
+								<li>
+									<span className='marker-disc'></span>Nullam suscipit, est in
+									egestas cursus, maximus quam
+								</li>
+							</ul>
 						</div>
-						<div>
+						<div className='my-8'>
+							<div className='blog-paragraph'>
+								<h2 className='sm:[30px] mdd:[40px] text-[25px]'>
+									Making digital transactions easy
+								</h2>
+								<p>
+									Nullam vehicula justo nibh, consectetur pharetra ligula dictum
+									ut. Fusce convallis dictum mollis. Nam nec egestas eros. Donec
+									volutpat nibh eu risus tempus volutpat. Phasellus venenatis
+									non sem vel auctor. Quisque a sapien vel nulla vestibulum
+									eleifend at id augue. Nullam volutpat justo eget justo finibus
+									mattis. Nam lobortis, massa sit amet euismod fermentum, velit
+									dolor viverra odio, vitae sagittis velit metus sit amet massa.
+									Nullam nibh ante, pulvinar in dolor quis, ultricies maximus
+									dolor.
+								</p>
+							</div>
+							{/* <Quote /> */}
+							<QuoteBox quote={blogpost.quote} />
+							<div className='blog-paragraph'>
+								<p>
+									Suspendisse at augue vel odio fermentum fringilla eget et
+									sapien. Quisque enim massa, elementum id enim sit amet,
+									elementum tempus est. Sed felis dolor, varius et mauris at,
+									aliquam sollicitudin elit. Curabitur non bibendum elit. In non
+									tempor augue. Mauris aliquam porttitor justo, nec consectetur
+									leo ornare vitae. Nunc lobortis maximus leo gravida tristique.
+									Vestibulum vitae elit sit amet tortor suscipit facilisis ac
+									sed tortor.
+								</p>
+							</div>
+						</div>
+						<div className='blog-paragraph'>
 							<h2 className='sm:[30px] mdd:[40px] text-[25px]'>
 								The next big thing in the cash wallet industry
 							</h2>
@@ -128,7 +140,7 @@ const SingleBlogpost = () => {
 							</p>
 						</div>
 						{/* Image Carousel */}
-						<div className='my-8 '>
+						<div className='blog-paragraph my-8'>
 							<h2 className='sm:[30px] mdd:[40px] text-[25px]'>
 								Hassle-free transactions made possible
 							</h2>
@@ -153,7 +165,7 @@ const SingleBlogpost = () => {
 						</div>
 					</div>
 					<div className='flex flex-col items-center justify-between gap-8 border-t-[0.2px] border-paragraph border-opacity-30 pt-[25px] sm:flex-row'>
-						<div className='flex items-center flex-col sm:flex-row gap-3'>
+						<div className='flex flex-col items-center gap-3 sm:flex-row'>
 							<h5 className='font-grotesk text-[14.6px] font-[500] text-black'>
 								Post Tags :
 							</h5>
@@ -169,8 +181,10 @@ const SingleBlogpost = () => {
 								))}
 							</ul>
 						</div>
-						<div className="flex items-center gap-3 flex-col sm:flex-row">
-							<span className='text-center font-grotesk text-[14.6px] font-[500] text-black'>Share :</span>
+						<div className='flex flex-col items-center gap-3 sm:flex-row'>
+							<span className='text-center font-grotesk text-[14.6px] font-[500] text-black'>
+								Share :
+							</span>
 							<Socials className={"h-8 w-8 border border-black text-sm"} />
 						</div>
 					</div>

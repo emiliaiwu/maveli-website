@@ -1,5 +1,6 @@
 import { blogData } from "../constants";
 import { ArticleBox } from "./Box";
+import Reveal from "./animation/Reveal";
 
 const Articles = ({ requestedAmount }) => {
 	const amount = Number(requestedAmount);
@@ -8,28 +9,30 @@ const Articles = ({ requestedAmount }) => {
 		if (!amount || amount >= blogData.length) {
 			// Display all blog posts
 			return blogData.map((blogpost) => (
-				<ArticleBox
-					key={blogpost.id}
-					id={blogpost.id}
-					title={blogpost.title}
-					date={blogpost.date}
-					category={blogpost.category}
-					image={blogpost.image}
-					link={`/blog/${blogpost.slug}/`}
-				/>
-			))
-		} else  {
+				<Reveal key={blogpost.id}>
+					<ArticleBox
+						id={blogpost.id}
+						title={blogpost.title}
+						date={blogpost.date}
+						category={blogpost.category}
+						image={blogpost.image}
+						link={`/blog/${blogpost.slug}/`}
+					/>
+				</Reveal>
+			));
+		} else {
 			// Display the requested amount of blog posts
 			return blogData.slice(0, amount).map((blogpost) => (
-				<ArticleBox
-					key={blogpost.id}
-					id={blogpost.id}
-					title={blogpost.title}
-					date={blogpost.date}
-					category={blogpost.category}
-					image={blogpost.image}
-					link={`/blog/${blogpost.slug}/`}
-				/>
+				<Reveal key={blogpost.id}>
+					<ArticleBox
+						id={blogpost.id}
+						title={blogpost.title}
+						date={blogpost.date}
+						category={blogpost.category}
+						image={blogpost.image}
+						link={`/blog/${blogpost.slug}/`}
+					/>
+				</Reveal>
 			));
 		}
 	};

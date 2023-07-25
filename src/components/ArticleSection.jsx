@@ -3,6 +3,7 @@ import { Heading, H2Header, InfoTextCenter } from "./Texts";
 import Button from "./Button";
 import { styles } from "../style";
 import Articles from "./Articles";
+import Reveal from "./animation/Reveal";
 
 const ArticleSection = () => {
 	const { text, title, paragraph } = articleSection;
@@ -14,9 +15,16 @@ const ArticleSection = () => {
 			>
 				{/* heading */}
 				<div className='flex flex-col items-center justify-center gap-5 text-center sm:px-24 md:px-80'>
-					<Heading text={text} />
-					<H2Header text={title} />
-					<InfoTextCenter text={paragraph} />
+					<Reveal>
+						<Heading text={text} />
+					</Reveal>
+					<Reveal>
+						{" "}
+						<H2Header text={title} />
+					</Reveal>
+					<Reveal>
+						<InfoTextCenter text={paragraph} />
+					</Reveal>
 				</div>
 
 				{/* articles */}
@@ -24,12 +32,14 @@ const ArticleSection = () => {
 
 				{/* button */}
 				<div className='mt-5'>
-					<Button
-						link={"/blog"}
-						textColor={"text-white"}
-						text={"See Our Blog"}
-						bgColor={"bg-black"}
-					/>
+					<Reveal>
+						<Button
+							link={"/blog"}
+							textColor={"text-white"}
+							text={"See Our Blog"}
+							bgColor={"bg-black"}
+						/>
+					</Reveal>
 				</div>
 			</div>
 		</section>

@@ -14,6 +14,7 @@ const AccordionItem = ({ item, num, lastItem, clicked, setClicked }) => {
 		contentRef.current.style.maxHeight = isOpen ? `${contentHeight}px` : "0px";
 	}, [isOpen]);
 
+	
 	return (
 		<div
 			className={`${

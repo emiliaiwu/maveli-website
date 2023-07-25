@@ -3,6 +3,7 @@ import { styles } from "../../style";
 import ActiveUsers from "../ActiveUsers";
 import Button from "../Button";
 import { Heading, InfoText } from "../Texts";
+import Reveal from "../animation/Reveal";
 
 const Hero = () => {
 	const {
@@ -18,45 +19,59 @@ const Hero = () => {
 			<div
 				className={`flex flex-col items-center justify-between gap-8 sm:flex-row ${styles.boxWidth}`}
 			>
-				<div className='flex w-full flex-col justify-center gap-5 py-4 sm:w-[60%] mdd:w-[50%]'>
-					<Heading text={headingText} />
+				<div className='mb-6 flex w-full flex-col justify-center gap-5 py-4 sm:mb-0 sm:w-[60%] mdd:w-[50%] '>
+					<Reveal>
+						<Heading text={headingText} />
+					</Reveal>
 					<div className='w-full'>
-						<h1 className='text-left font-grotesk text-[41px] font-medium leading-[49.2px] sm:text-[48px] sm:leading-[60px] md:text-[65px] md:leading-[78px]'>
-							{headingTitle[0]}{" "}
-							<span className='inline-block border-none bg-primary px-[10px] pb-[5px]'>
-								<span>{headingTitle[1]}</span>
-							</span>{" "}
-							{headingTitle[2]}
-						</h1>
+						<Reveal>
+							<h1 className='text-left font-grotesk text-[41px] font-medium leading-[50px] sm:text-[48px] sm:leading-[60px] md:text-[65px] md:leading-[78px]'>
+								{headingTitle[0]}{" "}
+								<span className='inline-block border-none bg-primary px-[10px] pb-[5px]'>
+									<span>{headingTitle[1]}</span>
+								</span>{" "}
+								{headingTitle[2]}
+							</h1>
+						</Reveal>
 					</div>
-					<InfoText text={headingParagraph} />
-					<div className='mb-5 flex items-center gap-5'>
-						<Button
-							text={headingButtonText[0]}
-							bgColor={"bg-black"}
-							link={"#home"}
-							textColor={"text-white"}
-						/>
-						<Button
-							text={headingButtonText[1]}
-							bgColor={"transparent"}
-							link={"contact"}
-							textColor={"text-black"}
-						/>
+					<Reveal>
+						<InfoText text={headingParagraph} />
+					</Reveal>
+
+					<div className='mb-7 flex items-center gap-5'>
+						<Reveal>
+							<Button
+								text={headingButtonText[0]}
+								bgColor={"bg-black"}
+								link={"#home"}
+								textColor={"text-white"}
+							/>
+						</Reveal>
+
+						<Reveal>
+							<Button
+								text={headingButtonText[1]}
+								bgColor={"transparent"}
+								link={"contact"}
+								textColor={"text-black"}
+							/>
+						</Reveal>
 					</div>
 					<ActiveUsers />
 				</div>
 
-				<div className='flex h-full w-full sm:w-[50%] '>
-					<div className='hero-bg-img h-full w-full overflow-hidden rounded-[10px] border-[0.6px] border-black bg-tertiary '>
-						<div className='mt-[30px] flex w-full items-end bg-transparent'>
-							<img
-								loading='lazy'
-								src={heroImage}
-								className='inline-block aspect-auto h-auto w-[70%] max-w-[704px] object-contain sm:w-[80%]'
-							/>
+				<div className='ease flex h-full w-full duration-300 sm:w-[50%]'>
+					<Reveal>
+						<div className='hero-bg-img h-full w-full overflow-hidden rounded-[10px] border-[0.6px] border-black bg-tertiary '>
+							<div className='mt-[30px] flex w-full items-end bg-transparent'>
+								<img
+									loading='lazy'
+									src={heroImage}
+									className='inline-block aspect-auto h-auto w-[70%] max-w-[704px] object-contain sm:w-[80%]'
+								/>
+							</div>
 						</div>
-					</div>
+					</Reveal>
 				</div>
 			</div>
 		</section>
