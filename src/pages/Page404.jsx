@@ -1,4 +1,4 @@
-import image404 from "../assets/404_Asset-7.png"
+import image404 from "../assets/404_Asset-7.png";
 import { Heading, H2Header, InfoTextCenter } from "../components/Texts";
 import { Button } from "../components";
 
@@ -6,7 +6,7 @@ const Page404 = () => {
 	return (
 		<section>
 			<div className='mx-auto min-h-[73vh] max-w-[1000px]'>
-				<div className='max-w-[500px] flex flex-col items-center justify-center gap-5 text-center mx-auto'>
+				<div className='mx-auto flex max-w-[500px] flex-col items-center justify-center gap-5 text-center'>
 					<Heading text={"ERROR PAGE"} />
 					<div className='max-w-[400px]'>
 						<img src={image404} alt='error image' className='w-full' />

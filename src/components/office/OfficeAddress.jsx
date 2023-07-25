@@ -1,11 +1,11 @@
-import { Heading, H2Header } from "./Texts";
-import { styles } from "../style";
-import { ourOffice } from "../constants";
-import { OfficeBox } from "./Box";
+import { Heading, H2Header } from "../Texts";
+import { styles } from "../../style";
+import { ourOffice } from "../../constants";
+import { OfficeBox } from "../Box";
 import OfficeMap from "./OfficeMap";
 import { useState } from "react";
-import { RxCross2 } from "../constants";
-import Reveal from "./animation/Reveal";
+import { RxCross2 } from "../../constants";
+import Reveal from "../animation/Reveal";
 
 const OfficeAddress = () => {
 	const { heading, title, address } = ourOffice;
@@ -64,8 +64,6 @@ const OfficeAddress = () => {
 						</button>
 					</section>
 				)}
-
-				{/* <OfficeMap url={url} /> */}
 			</div>
 		</section>
 	);

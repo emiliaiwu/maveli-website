@@ -1,5 +1,6 @@
-import { heroDetails } from "../constants";
-import Reveal from "./animation/Reveal";
+import { heroDetails } from "../../constants";
+import Reveal from "../animation/Reveal";
+import CountUpWithObserver from "../stats/CountUpWithObserver";
 
 const ActiveUsers = () => {
 	const { ActiveUsersObj } = heroDetails;
@@ -24,7 +25,8 @@ const ActiveUsers = () => {
 			<div className='flex flex-col items-start justify-center'>
 				<Reveal>
 					<div className='font-grotesk text-[21px] font-semibold leading-7'>
-						<span className=''>140</span> K+
+						<CountUpWithObserver startNum={0} endNum={140} duration={4} />
+						<span className='ml-1 inline'>K+</span>
 					</div>
 				</Reveal>
 				<Reveal>

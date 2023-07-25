@@ -1,5 +1,5 @@
 export const styles = {
-    boxWidth: "xl:max-w-[1400px] w-full",
+	boxWidth: "xl:max-w-[1400px] w-full",
 
 	heading2:
 		"font-grotesk font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
@@ -7,8 +7,8 @@ export const styles = {
 		"font-DMSans font-normal text-dimWhite text-[18px] leading-[30.8px]",
 
 	flexCenter: "flex justify-center items-center",
-    flexStart: "flex justify-center items-start",
-    flexBetween: "flex justify-between items-center",
+	flexStart: "flex justify-center items-start",
+	flexBetween: "flex justify-between items-center",
 
 	paddingX: "sm:px-16 px-6",
 	paddingY: "sm:py-16 py-6",
@@ -16,4 +16,4 @@ export const styles = {
 
 	marginX: "sm:mx-16 mx-6",
 	marginY: "sm:my-16 my-6",
-}
+};

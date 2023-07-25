@@ -1,5 +1,5 @@
 
-import { styles } from "../style";
+import { styles } from "../../style";
 import Articles from "./Articles";
 
 const AllBlogposts = () => {

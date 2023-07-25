@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AccordionItem from "./AccordionItem";
-import Reveal from "./animation/Reveal";
+import Reveal from "../animation/Reveal";
 
 const Accordion = ({ faq }) => {
 	const [clicked, setClicked] = useState(0);

@@ -14,15 +14,11 @@ const Reveal = ({ children, className }) => {
 
 			transition: {
 				ease: "easeOut",
-                duration: 1,
-				delay: 0.2,
-				
-                
+				duration: 0.8,
+				delay: 0.3,
 			},
 		},
 	};
-
-	
 
 	const mainControls = useAnimation();
 
@@ -36,7 +32,7 @@ const Reveal = ({ children, className }) => {
 		<motion.div
 			variants={containerVariant}
 			animate={mainControls}
-            initial='hidden'
+			initial='hidden'
 			ref={ref}
 			className={`${className}`}
 		>
@@ -46,4 +42,3 @@ const Reveal = ({ children, className }) => {
 };
 
 export default Reveal;
-

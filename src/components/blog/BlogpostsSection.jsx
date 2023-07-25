@@ -1,7 +1,7 @@
-import { articleSection } from "../constants";
-import { Heading, H2Header, InfoTextCenter } from "./Texts";
-import Button from "./Button";
-import { styles } from "../style";
+import { articleSection } from "../../constants";
+import { Heading, H2Header, InfoTextCenter } from "../Texts";
+import Button from "../Button";
+import { styles } from "../../style";
 import Articles from "./Articles";
 
 const ArticleSection = () => {
@@ -15,7 +15,7 @@ const ArticleSection = () => {
 				{/* heading */}
 				<div className='flex flex-col items-center justify-center gap-5 text-center sm:px-24 md:w-[70%]'>
 					<Heading text={text} />
-                    <H2Header text={`Other ${ title }`} />
+					<H2Header text={`Other ${title}`} />
 					<InfoTextCenter text={paragraph} />
 				</div>
 

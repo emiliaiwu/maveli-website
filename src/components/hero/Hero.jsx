@@ -1,6 +1,6 @@
 import { heroDetails } from "../../constants";
 import { styles } from "../../style";
-import ActiveUsers from "../ActiveUsers";
+import ActiveUsers from "./ActiveUsers";
 import Button from "../Button";
 import { Heading, InfoText } from "../Texts";
 import Reveal from "../animation/Reveal";

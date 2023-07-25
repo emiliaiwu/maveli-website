@@ -2,8 +2,7 @@ import { navLinks } from "../../constants";
 import MobileMenuItem from "./MobileMenuItem";
 import Logo from "../Logo";
 
-const MobileMenu = ({isOpen, setIsOpen}) => {
-	
+const MobileMenu = ({ isOpen, setIsOpen }) => {
 	return (
 		<nav
 			className={`absolute left-0 top-0 z-50 h-screen w-[60%] bg-white px-8 pt-8 shadow-lg sm:px-12 md:hidden ${

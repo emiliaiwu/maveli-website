@@ -17,10 +17,7 @@ import {
 	Product,
 } from "./pages";
 
-
 function App() {
-	
-
 	const router = createBrowserRouter(
 		createRoutesFromElements(
 			<Route>
@@ -38,7 +35,7 @@ function App() {
 		)
 	);
 
-	return <RouterProvider router={router} />
+	return <RouterProvider router={router} />;
 }
 
 export default App;

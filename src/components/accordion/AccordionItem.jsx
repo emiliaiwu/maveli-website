@@ -14,7 +14,6 @@ const AccordionItem = ({ item, num, lastItem, clicked, setClicked }) => {
 		contentRef.current.style.maxHeight = isOpen ? `${contentHeight}px` : "0px";
 	}, [isOpen]);
 
-	
 	return (
 		<div
 			className={`${
@@ -22,13 +21,13 @@ const AccordionItem = ({ item, num, lastItem, clicked, setClicked }) => {
 			} border-black border-opacity-20 px-6`}
 		>
 			<div
-				className='flex items-start justify-between py-6'
+				className='flex cursor-pointer items-start justify-between py-6'
 				onClick={handleClick}
 			>
 				<p className='font-grotesk text-[16px] font-semibold text-black'>
 					{item.title}
 				</p>
-				<button onClick={handleClick} className="ml-3">
+				<button onClick={handleClick} className='ml-3'>
 					{isOpen ? (
 						<BsFillPatchMinusFill
 							size={30}
@@ -48,7 +47,7 @@ const AccordionItem = ({ item, num, lastItem, clicked, setClicked }) => {
 				className={`transition-max-height overflow-hidden duration-[400ms] ease-in-out`}
 			>
 				<p className='mb-7 font-DMSans text-sm leading-7 text-paragraph'>
-					{item.content} 
+					{item.content}
 				</p>
 			</div>
 		</div>
@@ -56,5 +55,3 @@ const AccordionItem = ({ item, num, lastItem, clicked, setClicked }) => {
 };
 
 export default AccordionItem;
-
-

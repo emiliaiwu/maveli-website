@@ -1,7 +1,7 @@
 import { iPhone5 } from "../assets";
 import { faqs } from "../constants";
 import { styles } from "../style";
-import Accordion from "./Accordion";
+import Accordion from "./accordion/Accordion";
 import { H2Header, Heading } from "./Texts";
 import Reveal from "./animation/Reveal";
 

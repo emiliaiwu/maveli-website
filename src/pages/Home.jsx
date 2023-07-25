@@ -10,11 +10,8 @@ import {
 	Testimonials,
 	Faq,
 	NewsletterSection,
+	ArticleSection,
 } from "../components";
-import ArticleSection from "../components/ArticleSection";
-
-
-
 
 const Home = () => {
 	return (
@@ -30,7 +27,7 @@ const Home = () => {
 			<Testimonials />
 			<Faq />
 			<ArticleSection />
-			<NewsletterSection/>
+			<NewsletterSection />
 		</>
 	);
 };

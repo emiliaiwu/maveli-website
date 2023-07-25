@@ -7,9 +7,4 @@ import Pricing from "./Pricing";
 import Product from "./Product";
 import BlogpostPage from "./BlogpostPage";
 
-
-
-
-export {
-    About, Page404, Pricing, Product, Blog, Contact, Home, BlogpostPage, 
-};
+export { About, Page404, Pricing, Product, Blog, Contact, Home, BlogpostPage };

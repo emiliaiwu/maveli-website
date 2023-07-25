@@ -1,14 +1,17 @@
-
-import { BlogpostsSection, NewsletterSection, SingleBlogpost } from '../components'
+import {
+	BlogpostsSection,
+	NewsletterSection,
+	SingleBlogpost,
+} from "../components";
 
 const BlogpostPage = () => {
-  return (
-      <>
-          <SingleBlogpost />
-          <BlogpostsSection/>
-          <NewsletterSection/>
-      </>
-  )
-}
+	return (
+		<>
+			<SingleBlogpost />
+			<BlogpostsSection />
+			<NewsletterSection />
+		</>
+	);
+};
 
-export default BlogpostPage
+export default BlogpostPage;

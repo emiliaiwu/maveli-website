@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import { blogData } from "../constants";
-import { styles } from "../style";
-import { Socials } from ".";
-import { QuoteBox } from "./Box";
-import Reveal from "./animation/Reveal";
+import { blogData } from "../../constants";
+import { styles } from "../../style";
+import { Socials } from "..";
+import { QuoteBox } from "../Box";
+import Reveal from "../animation/Reveal";
 
 const SingleBlogpost = () => {
 	const { slug } = useParams();

@@ -113,7 +113,7 @@ const Footer = () => {
 						<span className='font-grotesk text-sm font-semibold text-white'>
 							Copyright © 2023{" "}
 							<span className='ease duration-200 hover:text-primary'>
-								<Link to={"https://emiliaiwu.io"}>Emilia Iwu Projects</Link>
+								<Link to={"https://emiliaiwu.com"}>Emilia Iwu Projects</Link>
 							</span>
 						</span>
 					</div>

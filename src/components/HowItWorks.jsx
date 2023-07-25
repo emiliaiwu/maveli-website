@@ -35,12 +35,13 @@ const HowItWorks = () => {
 						<InfoTextCenter text={paragraph} />
 					</Reveal>
 					<Reveal>
-					<Button
-						text={buttonText}
-						bgColor={"bg-black"}
-						textColor={"text-white"}
-						link={"/"}
-					/></Reveal>
+						<Button
+							text={buttonText}
+							bgColor={"bg-black"}
+							textColor={"text-white"}
+							link={"/"}
+						/>
+					</Reveal>
 				</div>
 				<div className='howitworks-bg-img flex w-full items-center justify-center border-t border-black sm:w-[50%] sm:border-r  sm:border-t-0 '>
 					<div className='py-[120px]'>

@@ -30,11 +30,8 @@ export function InfoTextCenter({ text }) {
 
 export function H2Header({ text }) {
 	return (
-		
-			<h2 className='font-grotesk text-[36px] font-medium leading-[45.5px] text-black sm:text-[38px] sm:leading-[50px] md:text-[45px] md:leading-[58.5px]'>
-				{text}
-			</h2>
-	
+		<h2 className='font-grotesk text-[36px] font-medium leading-[45.5px] text-black sm:text-[38px] sm:leading-[50px] md:text-[45px] md:leading-[58.5px]'>
+			{text}
+		</h2>
 	);
 }
-

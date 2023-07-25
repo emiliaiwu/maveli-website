@@ -1,6 +1,6 @@
-import { styles } from "../style";
+import { styles } from "../../style";
 import Newsletter from "./Newsletter";
-import Reveal from "./animation/Reveal";
+import Reveal from "../animation/Reveal";
 
 const NewsletterSection = () => {
 	return (

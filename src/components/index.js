@@ -4,28 +4,29 @@ import Main from "./Main";
 import TrustedPartners from "./TrustedPartners";
 import AboutSection from "./AboutSection";
 import Hero from "./hero/Hero";
-import Stats from "./Stats";
+import Stats from "./stats/Stats";
 import { MindfulDesign } from "./MindfulDesign";
 import Features from "./Features";
 import HowItWorks from "./HowItWorks";
 import PricingPlan from "./PricingPlan";
 import Testimonials from "./Testimonials";
 import Faq from "./FAQ";
-import NewsletterSection from "./NewsletterSection";
+import NewsletterSection from "./newsletter/NewsletterSection";
 import Button from "./Button";
 import PageHeader from "./PageHeader";
 import OurValues from "./OurValues";
 import Achievements from "./Achievements";
 import Teams from "./Teams";
-import OfficeAddress from "./OfficeAddress";
+import OfficeAddress from "./office/OfficeAddress";
 import DeskTopMode from "./DeskTopMode";
-import AllBlogposts from "./AllBlogposts";
+import AllBlogposts from "./blog/AllBlogposts";
 import Socials from "./Socials";
-import SingleBlogpost from "./SingleBlogpost";
-import Articles from "./Articles";
-import BlogpostsSection from "./BlogpostsSection";
+import SingleBlogpost from "./blog/SingleBlogpost";
+import Articles from "./blog/Articles";
+import BlogpostsSection from "./blog/BlogpostsSection";
+import ArticleSection from "./blog/BlogpostsSection";
 import GetInTouch from "./GetInTouch";
-import SendMessage from "./SendMessage";
+import SendMessage from "./message/SendMessage";
 
 export {
 	Footer,
@@ -54,6 +55,7 @@ export {
 	SingleBlogpost,
 	Articles,
 	BlogpostsSection,
+	ArticleSection,
 	GetInTouch,
 	SendMessage
 };

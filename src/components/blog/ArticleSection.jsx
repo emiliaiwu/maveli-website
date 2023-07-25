@@ -1,9 +1,9 @@
-import { articleSection } from "../constants";
-import { Heading, H2Header, InfoTextCenter } from "./Texts";
-import Button from "./Button";
-import { styles } from "../style";
+import { articleSection } from "../../constants";
+import { Heading, H2Header, InfoTextCenter } from "../Texts";
+import Button from "../Button";
+import { styles } from "../../style";
 import Articles from "./Articles";
-import Reveal from "./animation/Reveal";
+import Reveal from "../animation/Reveal";
 
 const ArticleSection = () => {
 	const { text, title, paragraph } = articleSection;

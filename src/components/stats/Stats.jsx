@@ -1,5 +1,5 @@
-import { styles } from "../style";
-import Reveal from "./animation/Reveal";
+import { styles } from "../../style";
+import CountUpWithObserver from "./CountUpWithObserver";
 
 const Stats = () => {
 	const StatsData = [
@@ -20,7 +20,14 @@ const Stats = () => {
 							<div key={index} className='w-full'>
 								<div className='border-b border-black py-10 text-center sm:border-b-0 sm:border-r sm:py-0'>
 									<div className='font-grotesk text-[35px] font-medium text-black sm:text-[38px] md:text-[48px]'>
-										<span>{stat[0]}</span> {stat[1]}
+										<CountUpWithObserver
+											startNum={0}
+											endNum={parseFloat(stat[0])}
+											duration={4}
+											separator={stat[1] === "%" ? "" : ","}
+											useEasing={true}
+										/>{" "}
+										{stat[1]}
 									</div>
 									<h3 className='font-DMSans text-sm text-paragraph'>
 										{stat[2]}
@@ -37,7 +44,15 @@ const Stats = () => {
 								<div className=' pt-10 text-center sm:border-b-0 sm:py-0'>
 									<div className='font-grotesk text-[35px] font-medium text-black sm:text-[38px] md:text-[48px]'>
 										{" "}
-										{stat[0]} <span>{stat[1]}</span> {stat[2]}
+										{stat[0]}{" "}
+										<CountUpWithObserver
+											startNum={0}
+											endNum={parseFloat(stat[1])}
+											duration={4}
+											separator={stat[1] === "%" ? "" : ","}
+											useEasing={true}
+										/>{" "}
+										{stat[2]}
 									</div>
 									<h3 className='font-DMSans text-sm text-paragraph'>
 										{stat[3]}

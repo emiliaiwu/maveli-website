@@ -6,7 +6,6 @@ import MobileMenuToggle from "./MobileMenuToggle";
 import { styles } from "../../style";
 import DownloadButton from "./DownloadButton";
 
-
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 

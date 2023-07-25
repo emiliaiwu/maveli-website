@@ -1,6 +1,6 @@
-import { blogData } from "../constants";
-import { ArticleBox } from "./Box";
-import Reveal from "./animation/Reveal";
+import { blogData } from "../../constants";
+import { ArticleBox } from "../Box";
+import Reveal from "../animation/Reveal";
 
 const Articles = ({ requestedAmount }) => {
 	const amount = Number(requestedAmount);

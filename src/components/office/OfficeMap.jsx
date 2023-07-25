@@ -1,4 +1,4 @@
-import { styles } from "../style";
+import { styles } from "../../style";
 
 const OfficeMap = ({ url }) => {
 	return (
@@ -11,10 +11,10 @@ const OfficeMap = ({ url }) => {
 			>
 				<iframe
 					src={url}
-                    allowfullscreen=''
-                    height="450"
-                    loading='lazy'
-                    className="border-0 w-full"
+					allowfullscreen=''
+					height='450'
+					loading='lazy'
+					className='w-full border-0'
 				></iframe>
 			</div>
 		</div>

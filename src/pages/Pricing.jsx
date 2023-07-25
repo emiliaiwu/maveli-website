@@ -1,5 +1,5 @@
 import {
-  Faq,
+	Faq,
 	NewsletterSection,
 	PageHeader,
 	PricingPlan,
@@ -13,8 +13,8 @@ const Pricing = () => {
 			<PageHeader title={"Pricing Plan"} location={"Pricing"} />
 			<PricingPlan />
 			<TrustedPartners />
-      <Testimonials />
-      <Faq/>
+			<Testimonials />
+			<Faq />
 			<NewsletterSection />
 		</>
 	);

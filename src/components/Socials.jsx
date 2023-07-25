@@ -5,7 +5,7 @@ import {
 	FaLinkedinIn,
 } from "react-icons/fa";
 
-const Socials = ({className}) => {
+const Socials = ({ className }) => {
 	const socials = [
 		{ icon: <FaFacebookF />, name: "Facebook", url: "https://facebook.com" },
 		{ icon: <FaTwitter />, name: "Twitter", url: "https://twitter.com" },
@@ -21,7 +21,7 @@ const Socials = ({className}) => {
 					target='_blank'
 					rel='noopener noreferrer'
 					key={index}
-					className={`${className} flex ease items-center justify-center rounded-full duration-200 hover:bg-primary`}
+					className={`${className} ease flex items-center justify-center rounded-full duration-200 hover:bg-primary`}
 				>
 					{social.icon}
 				</a>

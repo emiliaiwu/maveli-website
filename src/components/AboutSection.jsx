@@ -85,16 +85,15 @@ const AboutSection = () => {
 
 				{/* Image */}
 				<div className='relative flex justify-center pr-5 md:w-[45%]'>
-					
-						<div className='h-auto w-full overflow-hidden rounded-md border border-black'>
-							<img
-								src={image}
-								className='aspect-[1/1] h-full w-full object-cover'
-								alt='African boy holding phone'
-								loading='lazy'
-							/>
-						</div>
-					
+					<div className='h-auto w-full overflow-hidden rounded-md border border-black'>
+						<img
+							src={image}
+							className='aspect-[1/1] h-full w-full object-cover'
+							alt='African boy holding phone'
+							loading='lazy'
+						/>
+					</div>
+
 					<Reveal>
 						<div className='absolute bottom-[-20px] right-[-3px] h-auto w-[35%]'>
 							<img

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const Newsletter = () => {
 	const [email, setEmail] = useState("");
 
@@ -34,7 +33,7 @@ const Newsletter = () => {
 				</label>
 				<button
 					type='submit'
-					className='mdd:[180%] mt-6 cursor-pointer rounded-[7px] border-[0.6px] border-black bg-black px-12 py-[14px] text-center text-[15px] font-semibold text-white hover:bg-primary hover:text-black duration-200 ease sm:mt-0'
+					className='mdd:[180%] ease mt-6 cursor-pointer rounded-[7px] border-[0.6px] border-black bg-black px-12 py-[14px] text-center text-[15px] font-semibold text-white duration-200 hover:bg-primary hover:text-black sm:mt-0'
 				>
 					Subscribe
 				</button>
