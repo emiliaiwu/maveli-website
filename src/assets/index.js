@@ -1,5 +1,4 @@
-import iPhone2 from "./02_iPhone_Mockup.jpg";
-import iPhone3 from "./03_iPhone_Mockup.jpg";
+
 import iPhone5 from "./05_iPhone_Mockup-1.png";
 
 import PSD021 from "./PSD-02-1.png";
@@ -56,8 +55,6 @@ import officeImg3 from "./view-of-office-PQPH8KK.jpg";
 import dashBoardImg from "./Banking-Dashboard-1024x662.jpg"
 
 export {
-	iPhone2,
-	iPhone3,
 	iPhone5,
 	heroImg,
 	aboutImg,
