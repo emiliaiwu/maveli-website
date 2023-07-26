@@ -4,18 +4,20 @@ import { Button } from "../components";
 
 const Page404 = () => {
 	return (
-		<section>
-			<div className='mx-auto min-h-[73vh] max-w-[1000px]'>
+		<section className="h-screen">
+			<div className='mx-auto min-h-[73vh] max-w-[1000px] flex justify-center items-center'>
 				<div className='mx-auto flex max-w-[500px] flex-col items-center justify-center gap-5 text-center'>
 					<Heading text={"ERROR PAGE"} />
 					<div className='max-w-[400px]'>
-						<img
-							src={image404}
-							alt='error image'
-							className='w-full'
-							width='800'
-							height='323'
-						/>
+						<div className="h-[323]">
+							<img
+								src={image404}
+								alt='error image'
+								className='w-full'
+								width='800'
+								height='323'
+							/>
+						</div>
 					</div>
 					<H2Header text={"Oops, page not found!"} />
 					<InfoTextCenter

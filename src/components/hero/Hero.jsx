@@ -62,8 +62,8 @@ const Hero = () => {
 
 				<div className='ease flex h-full w-full duration-300 sm:w-[50%]'>
 					<Reveal>
-						<div className='hero-bg-img h-full w-full overflow-hidden rounded-[10px] border-[0.6px] border-black bg-tertiary '>
-							<div className='mt-[30px] flex w-full items-end bg-transparent'>
+						<div className='hero-bg-img h-full w-full rounded-[10px] border-[0.6px] border-black bg-tertiary overflow-hidden '>
+							<div className='mt-[30px] flex items-end bg-transparent w-full h-[1024]'>
 								<img
 									loading='lazy'
 									src={heroImage}
